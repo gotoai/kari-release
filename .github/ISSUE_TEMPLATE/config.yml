@@ -1,0 +1,12 @@
+# Blank issues stay available on purpose. The two templates here cover a bug
+# and a request; a question, or a report that is neither, would otherwise have
+# nowhere to go, and would arrive mis-filed as whichever template was closer.
+#
+# Note that Kari's own "Report a Bug" and "Request a Feature" buttons link
+# straight to a template, so this setting only affects people who reach the
+# issue list themselves.
+blank_issues_enabled: true
+
+# Add a contact_links list here once there is somewhere to send people —
+# Discussions (not enabled on this repository yet), documentation, or a
+# support address.
