@@ -1,0 +1,9 @@
+# Docusaurus
+node_modules/
+build/
+.docusaurus/
+.cache-loader/
+
+# OS / editor
+.DS_Store
+*.log

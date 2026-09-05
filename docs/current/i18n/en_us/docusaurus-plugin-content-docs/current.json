@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Kariを活用する": {
+    "message": "Using Kari",
+    "description": "The label for category 'Kariを活用する' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Kariを活用する.link.generated-index.title": {
+    "message": "Using Kari",
+    "description": "The generated-index page title for category 'Kariを活用する' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Kariを活用する.link.generated-index.description": {
+    "message": "Step-by-step guides for using Kari in everyday work.",
+    "description": "The generated-index page description for category 'Kariを活用する' in sidebar 'docs'"
+  }
+}

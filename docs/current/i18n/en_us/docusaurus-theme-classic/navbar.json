@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Kari",
+    "description": "The title in the navbar"
+  },
+  "item.label.ドキュメント": {
+    "message": "Docs",
+    "description": "Navbar item with label ドキュメント"
+  },
+  "item.label.ダウンロード": {
+    "message": "Download",
+    "description": "Navbar item with label ダウンロード"
+  }
+}
