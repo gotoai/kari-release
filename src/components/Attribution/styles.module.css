@@ -1,0 +1,26 @@
+/* 85% of the body size, semi-bold, sitting directly under the h1. */
+.attribution {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 1.5em;
+  row-gap: 0.25em;
+  margin: -0.75rem 0 1.5rem;
+  font-size: calc(var(--ifm-font-size-base) * 0.85);
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.group {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  white-space: nowrap;
+}
+
+.logo {
+  height: 1.25em;
+  width: auto;
+  vertical-align: middle;
+}
