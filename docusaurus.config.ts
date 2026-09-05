@@ -50,9 +50,9 @@ const config: Config = {
           // Docs are the whole site: /quickstart, later /1.x/..., /en/...
           routeBasePath: "/",
           sidebarPath: "./sidebars.ts",
-          editUrl: "https://github.com/gotoai/kari-release/edit/main/",
-          // Translated pages link to their own file under docs/current/i18n/en_us/.
-          editLocalizedFiles: true,
+          // No "edit this page" link: this is product documentation, not a
+          // community wiki. The last-updated date stays; it is read from git at
+          // build time (dev mode shows a fake placeholder date on purpose).
           showLastUpdateTime: true,
         },
         blog: false,
