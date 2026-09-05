@@ -8,7 +8,7 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Production URL. Change here (and in static/CNAME) if the hostname changes.
-  url: "https://documents.kari.gotoai.com",
+  url: "https://docs.kari.gotoai.com",
   // "/" assumes a custom domain. Without one, a GitHub project site lives at
   // https://gotoai.github.io/kari-release/ and needs baseUrl "/kari-release/".
   baseUrl: process.env.TARGET_PATH || "/",
