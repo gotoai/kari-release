@@ -35,7 +35,12 @@ URL: https://nlftp.mlit.go.jp/ksj/
 >
 > 1. How to read  
 > (1) From the portal, open each dataset's page.  
-> (2) At the top of each dataset page there is an update history (「更新履歴」), from which you can find the dataset's update dates.
+> (2) At the top of each dataset page there is a sentence of the form 「選択したデータ項目は、国土数値情報　〇〇データ　です。」 ("The selected data item is National Land Numerical Information: 〇〇 data."). The 〇〇 part is the dataset name.  
+> (3) Below it there is a table whose first row is the update history (「更新履歴」), from which you can find the dataset's update dates.  
+>  - The update history row may contain several lines; in that case the first line is the most recent update.  
+>  - Each update history entry begins with the year of the update, in the Western or Japanese calendar, or with the update date. If an entry cannot be parsed, you may skip it.  
+>  - You may skip dataset pages that have no update history.  
+> (4) You may use up to 5 subagents.
 >
 > 2. Aggregation method  
 > (1) Include only items dated 2025/01/01 or later.  

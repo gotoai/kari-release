@@ -67,6 +67,16 @@ const config: Config = {
     colorMode: { respectPrefersColorScheme: true },
     navbar: {
       title: "Kari",
+      // GotoAI wordmark beside the title. The source artwork is white text
+      // for dark backgrounds; the light-theme copy has the wordmark recolored
+      // dark gray, with the hexagon mark left untouched in both.
+      logo: {
+        alt: "GotoAI",
+        src: "img/gotoai-logo.png",
+        srcDark: "img/gotoai-logo-white.png",
+        width: 128,
+        height: 32,
+      },
       items: [
         {
           type: "docSidebar",
