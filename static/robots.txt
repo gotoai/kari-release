@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://docs.kari.gotoai.com/sitemap.xml
+Sitemap: https://docs.kari.gotoai.com/en/sitemap.xml
