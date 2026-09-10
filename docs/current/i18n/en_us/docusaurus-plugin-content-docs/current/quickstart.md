@@ -6,6 +6,9 @@ sidebar_label: Quickstart
 description: From installing Kari to your first AI chat, in five minutes.
 ---
 
+import TabItem from "@theme/TabItem";
+import DownloadTabs, { DownloadCard } from "@site/src/components/DownloadTabs";
+
 # Kari in 5 minutes
 
 Kari is an AI assistant that reads, thinks and works alongside you on the files on your own machine. Drafting email, summarizing documents, translating material, building slides, analyzing and visualizing data, retrieving information from the web — Kari brings all of that work into a single tool, as a user-centered front end for AI agents.
@@ -21,6 +24,50 @@ This tutorial walks through the following steps in order.
 Let's begin 🚀
 
 ## Install Kari
+
+---
+
+Download the build for your platform below.
+
+<DownloadTabs>
+  <TabItem value="windows" label="Windows">
+    <DownloadCard platform="windows" />
+
+    1. Run the downloaded installer (KariSetup-version-x64.exe).
+    2. Follow the installer's prompts, then launch Kari from the Start menu or the desktop.
+
+    {/* TODO: insert image ![The Windows installer](@site/docs/current/main/img/quickstart_install_windows.png) */}
+  </TabItem>
+  <TabItem value="macos" label="macOS">
+    <DownloadCard platform="macos" />
+
+    1. Download the DMG for your Mac, Apple Silicon or Intel, open it, and drag Kari into the Applications folder.
+    2. Launch Kari from the Applications folder.
+
+    ![The macOS DMG window](@site/docs/current/main/img/quickstart_macosdmginstall.png)
+
+    *Screenshot shown in the original Japanese.*
+  </TabItem>
+  <TabItem value="linux" label="Linux">
+    <DownloadCard platform="linux" />
+
+    1. Download the `.deb` file to a local folder.
+    2. Install it with sudo privileges.
+
+    ```bash
+    sudo dpkg -i kari_<version>_amd64.deb
+    ```
+
+    3. On Ubuntu, launch Kari from Applications / Programming / Kari. From the command line, run `kari` to start the application.
+
+    ```
+    kari
+    ```
+    {/* TODO: insert image ![Kari starting on Linux](@site/docs/current/main/img/quickstart_install_linux.png) */}
+  </TabItem>
+</DownloadTabs>
+
+---
 
 ## Configure an AI provider
 

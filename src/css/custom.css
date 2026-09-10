@@ -25,3 +25,12 @@
   --ifm-color-primary-lighter: #a5cce3;
   --ifm-color-primary-lightest: #cbe1ee;
 }
+
+/* The "Kari" navbar item stands in for the brand title (see docusaurus.config.ts). */
+.navbar__kari-title,
+.navbar__kari-title.navbar__link--active {
+  color: var(--ifm-navbar-link-color);
+  font-weight: var(--ifm-font-weight-bold);
+  font-size: 1.1rem;
+  padding-left: 0;
+}

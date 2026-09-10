@@ -66,18 +66,24 @@ const config: Config = {
   themeConfig: {
     colorMode: { respectPrefersColorScheme: true },
     navbar: {
-      title: "Kari",
-      // GotoAI wordmark beside the title. The source artwork is white text
-      // for dark backgrounds; the light-theme copy has the wordmark recolored
-      // dark gray, with the hexagon mark left untouched in both.
+      // GotoAI wordmark at the left, linking to the company site. The source
+      // artwork is white text for dark backgrounds; the light-theme copy has
+      // the wordmark recolored dark gray, with the hexagon mark left untouched.
+      //
+      // "Kari" is a navbar item rather than the brand `title`: Docusaurus
+      // wraps title and logo in one link, so as a title it would follow the
+      // logo to gotoai.com instead of the docs home.
       logo: {
         alt: "GotoAI",
         src: "img/gotoai-logo.png",
         srcDark: "img/gotoai-logo-white.png",
+        href: "https://gotoai.com/",
+        target: "_blank",
         width: 128,
         height: 32,
       },
       items: [
+        { to: "/", label: "Kari", position: "left", className: "navbar__kari-title" },
         {
           type: "docSidebar",
           sidebarId: "docs",
@@ -106,7 +112,7 @@ const config: Config = {
       ],
       // Shown on every page. The English version lives in
       // docs/current/i18n/en_us/docusaurus-theme-classic/footer.json.
-      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://gotoai.com/">GotoAI株式会社</a>&emsp;&emsp;<a href="https://aaif.io/projects/goose">goose</a>プロジェクトに基く`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://gotoai.com/">GotoAI株式会社</a>&emsp;&emsp;<a href="https://aaif.io/projects/goose">goose</a>プロジェクトに基く&emsp;&emsp;アイコン: <a href="https://fontawesome.com/license/free">Font Awesome</a>（CC BY 4.0）`,
     },
     prism: {
       theme: prismThemes.github,

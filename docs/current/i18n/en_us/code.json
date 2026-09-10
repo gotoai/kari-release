@@ -337,5 +337,45 @@
   "kari.attribution.basedOn": {
     "message": "Based on the {goose} project",
     "description": "Attribution to the upstream project; {goose} is a link"
+  },
+  "kari.download.badge.current": {
+    "message": "Your platform",
+    "description": "Badge on the download card matching the visitor's platform"
+  },
+  "kari.download.button": {
+    "message": "Download",
+    "description": "Label of the download button"
+  },
+  "kari.download.started": {
+    "message": "Your download has started. If it does not begin, {link}.",
+    "description": "Line shown under the buttons after a download was started; {link} is the direct link to the file"
+  },
+  "kari.download.started.link": {
+    "message": "click here",
+    "description": "Link text inside kari.download.started"
+  },
+  "kari.download.windows.requirements": {
+    "message": "Windows 10 / 11 (64-bit)",
+    "description": "Supported Windows versions"
+  },
+  "kari.download.windows.note": {
+    "message": "Coming soon",
+    "description": "Signing status of the Windows installer"
+  },
+  "kari.download.macos.requirements": {
+    "message": "macOS 12 or later (Apple Silicon / Intel)",
+    "description": "Supported macOS versions"
+  },
+  "kari.download.macos.note": {
+    "message": "Signed and notarized by Apple",
+    "description": "Signing status of the macOS build"
+  },
+  "kari.download.linux.requirements": {
+    "message": "x86_64 · deb",
+    "description": "Supported Linux targets"
+  },
+  "kari.download.linux.note": {
+    "message": "Unsigned",
+    "description": "Signing status of the Linux build"
   }
 }

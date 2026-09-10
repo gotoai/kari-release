@@ -6,6 +6,9 @@ sidebar_label: クイックスタート
 description: Kari のインストールから最初の AI チャットまでを 5 分で。
 ---
 
+import TabItem from "@theme/TabItem";
+import DownloadTabs, { DownloadCard } from "@site/src/components/DownloadTabs";
+
 # 5分で使えるKari
 
 Kari (かり・日本語「雁」の意味) は、ローカルファイルをAIと一緒に読み、考え、そして作業を進めるアシスタントです。メールひな形作成、文書要約、資料翻訳、スライド作成、データ分析・可視化、Web情報取得など、すべての作業を一つのツールに統合する、ユーザー中心のAIエージェントフロントです。
@@ -21,6 +24,53 @@ Kari (かり・日本語「雁」の意味) は、ローカルファイルをAI�
 それでは始めましょう 🚀
 
 ## Kariをインストールする
+
+---
+
+お使いの環境に合わせて、以下からダウンロードしてください。
+
+<DownloadTabs>
+  <TabItem value="windows" label="Windows">
+    <DownloadCard platform="windows" />
+
+    <!-- 1. ダウンロードしたインストーラー（KariSetup-バージョン-x64.exe）を実行します。
+    2. インストーラーの指示に従ってインストールし、スタートメニューまたはデスクトップから Kari を起動します。
+
+    ![Windows のインストーラー画面](@site/docs/current/main/img/quickstart_windowsinstallstart.png)
+
+    ![Windows のインストーラー画面](@site/docs/current/main/img/quickstart_windowsinstallprogress.png)
+
+    ![Windows のインストーラー画面](@site/docs/current/main/img/quickstart_windowsinstallcomplete.png) -->
+
+  </TabItem>
+  <TabItem value="macos" label="macOS">
+    <DownloadCard platform="macos" />
+
+    1. お使いの Mac に合わせて Apple Silicon 版または Intel 版の DMG をダウンロードして開き、Kari を「アプリケーション」フォルダーへドラッグします。
+    2. 「アプリケーション」フォルダーから Kari を起動します。
+
+    ![macOS の DMG 画面](@site/docs/current/main/img/quickstart_macosdmginstall.png)
+  </TabItem>
+  <TabItem value="linux" label="Linux">
+    <DownloadCard platform="linux" />
+
+    1. 「.deb」ファイルをローカルフォルダーへダウンロードします。
+    2. sudoの実行権限でインストールを実施します。
+    
+    ```bash
+    sudo dpkg -i kari_<version>_amd64.deb
+    ```
+
+    3. Ubuntuの場合は、「Applications / Programming / Kari」のパスからKariを起動します。コマンドラインの場合は、「kari」を実行してアプリケーションを起動します。
+
+    ```
+    kari
+    ```
+    {/* TODO: 画像を挿入 ![Linux での起動画面](@site/docs/current/main/img/quickstart_install_linux.png) */}
+  </TabItem>
+</DownloadTabs>
+
+---
 
 ## AIプロバイダーを設定する
 
