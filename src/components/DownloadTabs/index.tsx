@@ -115,7 +115,7 @@ const TEXT: Record<Platform, { requirements: React.ReactNode; note: React.ReactN
     ),
     note: (
       <Translate id="kari.download.linux.note" description="Signing status of the Linux build">
-        署名なし
+        DEB パッケージ
       </Translate>
     ),
   },
