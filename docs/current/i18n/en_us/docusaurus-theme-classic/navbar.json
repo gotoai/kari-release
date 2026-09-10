@@ -1,8 +1,4 @@
 {
-  "title": {
-    "message": "Kari",
-    "description": "The title in the navbar"
-  },
   "item.label.ドキュメント": {
     "message": "Docs",
     "description": "Navbar item with label ドキュメント"
