@@ -1,0 +1,41 @@
+---
+sidebar_position: 4
+slug: /notice
+title: Kari Notice
+description: The NOTICE file that accompanies Kari, with attributions for goose and bundled third-party components.
+---
+
+# Kari Notice
+
+The following is the `NOTICE` file that ships with Kari.
+
+```text
+Kari
+Copyright 2026 GotoAI Inc.
+
+This product includes software originally developed as the "goose" project
+by Block, Inc. (https://block.xyz), now stewarded by the Agentic AI
+Foundation (https://aaif.io/).
+
+    Portions Copyright 2024 Block, Inc.
+    Licensed under the Apache License, Version 2.0
+
+The original work is available at https://github.com/aaif-goose/goose
+This version of Kari is derived from goose v1.47.0.
+
+This software has been modified from the original work. A summary of
+modifications is maintained within the project's source repository.
+
+Kari bundles the Noto Sans JP typeface, used by the presentation viewer to
+draw decks that name a Japanese font the reader's platform does not have.
+
+    Copyright 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font
+    Name 'Source'. Licensed under the SIL Open Font License, Version 1.1.
+
+The licence text ships with the font at
+ui/desktop/public/fonts/NotoSansJP-OFL.txt.
+
+Kari is an independent project. It is not affiliated with, endorsed by, or
+sponsored by the Agentic AI Foundation, the Linux Foundation, or Block, Inc.
+"goose" and any related marks are the property of their respective owners.
+```
