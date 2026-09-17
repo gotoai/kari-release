@@ -31,7 +31,7 @@ import styles from "./styles.module.css";
 
 // Counted download names, resolved by kari-license-manager's
 // config/download_mapping.yml.
-const WINDOWS_DOWNLOAD_URL = "https://download.kari.gotoai.com/KariSetup-latest-x64.exe";
+const WINDOWS_DOWNLOAD_URL = ""; //"https://download.kari.gotoai.com/KariSetup-latest-x64.exe";
 const MACOS_SILICON_DOWNLOAD_URL = "https://download.kari.gotoai.com/Kari-latest-arm64.dmg";
 const MACOS_INTEL_DOWNLOAD_URL = "https://download.kari.gotoai.com/Kari-latest-x64.dmg";
 const LINUX_DOWNLOAD_URL = "https://download.kari.gotoai.com/kari_latest.deb";
@@ -39,7 +39,7 @@ const LINUX_DOWNLOAD_URL = "https://download.kari.gotoai.com/kari_latest.deb";
 // Fallback: the release assets themselves. Must name the same files the
 // `latest` lines of download_mapping.yml point at; update both on a release.
 const GITHUB_RELEASE_URL = "https://github.com/gotoai/kari-release/releases/download/v0.6.0/";
-const WINDOWS_FALLBACK_URL = `${GITHUB_RELEASE_URL}KariSetup-0.6.0-x64.exe`;
+const WINDOWS_FALLBACK_URL = ""; //`${GITHUB_RELEASE_URL}KariSetup-0.6.0-x64.exe`;
 const MACOS_SILICON_FALLBACK_URL = `${GITHUB_RELEASE_URL}Kari-0.6.0-arm64.dmg`;
 const MACOS_INTEL_FALLBACK_URL = `${GITHUB_RELEASE_URL}Kari-0.6.0-x64.dmg`;
 const LINUX_FALLBACK_URL = `${GITHUB_RELEASE_URL}kari_0.6.0_amd64.deb`;
@@ -80,7 +80,7 @@ const NAMES: Record<Platform, string> = {
 };
 
 const TEXT: Record<Platform, { requirements: React.ReactNode; note: React.ReactNode }> = {
-  windows: {
+  /* windows: {
     requirements: (
       <Translate id="kari.download.windows.requirements" description="Supported Windows versions">
         Windows 10 / 11（64bit）
@@ -89,6 +89,18 @@ const TEXT: Record<Platform, { requirements: React.ReactNode; note: React.ReactN
     note: (
       <Translate id="kari.download.windows.note" description="Signing status of the Windows installer">
         Microsoft Azure により署名済み
+      </Translate>
+    ),
+  }, */
+  windows: {
+    requirements: (
+      <Translate id="kari.download.windows.requirements" description="Supported Windows versions">
+        Windows 10 / 11（64bit）
+      </Translate>
+    ),
+    note: (
+      <Translate id="kari.download.windows.note" description="Signing status of the Windows installer">
+       準備中
       </Translate>
     ),
   },
