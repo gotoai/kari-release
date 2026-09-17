@@ -11,12 +11,12 @@ import DownloadTabs, { DownloadCard } from "@site/src/components/DownloadTabs";
 
 # 5分で使えるKari
 
-Kari (かり・日本語「雁」の意味) は、ローカルファイルをAIと一緒に読み、考え、そして作業を進めるアシスタントです。メールひな形作成、文書要約、資料翻訳、スライド作成、データ分析・可視化、Web情報取得など、すべての作業を一つのツールに統合する、ユーザー中心のAIエージェントフロントです。
+Kari (かり・日本語「雁」の意味) は、ローカルファイルをAIと一緒に読み、考え、そして作業を進めるアシスタントです。メールひな形作成、文書要約、資料翻訳、スライド作成、データ分析・可視化、Web情報取得、Browser処理自動化など、すべての作業を一つのツールに統合する、ユーザー中心のAIエージェントアプリケーションです。
 
 このチュートリアルでは、次の手順を順番に進めます。
 
 - ✅ Kari をインストールする
-- ✅ AI プロバイダーを設定する
+- ✅ AI サブスクリプション、またはプロバイダーを設定する
 - ✅ 作業フォルダーを選ぶ
 - ✅ AI セッションを新規作成する
 - ✅ AI チャット・作業を始める
@@ -33,14 +33,14 @@ Kari (かり・日本語「雁」の意味) は、ローカルファイルをAI�
   <TabItem value="windows" label="Windows">
     <DownloadCard platform="windows" />
 
-    <!-- 1. ダウンロードしたインストーラー（KariSetup-バージョン-x64.exe）を実行します。
+    1. ダウンロードしたインストーラー（KariSetup-バージョン-x64.exe）を実行します。
     2. インストーラーの指示に従ってインストールし、スタートメニューまたはデスクトップから Kari を起動します。
 
     ![Windows のインストーラー画面](@site/docs/current/main/img/quickstart_windowsinstallstart.png)
 
     ![Windows のインストーラー画面](@site/docs/current/main/img/quickstart_windowsinstallprogress.png)
 
-    ![Windows のインストーラー画面](@site/docs/current/main/img/quickstart_windowsinstallcomplete.png) -->
+    ![Windows のインストーラー画面](@site/docs/current/main/img/quickstart_windowsinstallcomplete.png)
 
   </TabItem>
   <TabItem value="macos" label="macOS">
@@ -72,23 +72,26 @@ Kari (かり・日本語「雁」の意味) は、ローカルファイルをAI�
 
 ---
 
-## AIプロバイダーを設定する
+## AI サブスクリプション、またはプロバイダーを設定する
 
 初期画面で「AIプロバイダーを設定」ボタンをクリックします。
 
 ![プロバイダー設定ボタン](@site/docs/current/main/img/quickstart_aiprovider.png)
 
-「AIプロバイダーを設定」のポップアップ画面が表示されます。ここでAIプロバイダーを選択するか、カスタムプロバイダーを追加します。この端末上でモデルを動かす場合は「ローカルモデルを使用」を選びます。
+「AIプロバイダーを設定」のポップアップ画面が表示されます。ここで AI サブスクリプション、またはプロバイダーを選択します。
+
+- AI サブスクリプションを選択します  
+  現在バージョンの Kari は以下の AI サブスクリプションを選択できます：　　
+  - [Anthropic Claude (Pro / Max)](select_anthropic_claude_subscriptoin.md)
+  - [OpenAI ChatGPT (Free / Go / Plus / Pro)](./select_openai_chatgpt_subscription.md)
+  
+- [事前定義済みの70以上の AI プロバイダー](./select_predefined_aiprovider.md)から選択します  
+
+- [カスタムプロバイダー](./select_custom_aiprovider.md)を追加します  
+
+- この端末上でモデルを動かす場合は「ローカルモデルを使用」を選びます  
 
 ![プロバイダー設定画面](@site/docs/current/main/img/quickstart_aiprovider_settings.png)
-
-「プロバイダーを選択」をクリックすると、事前定義済みの70以上の AI プロバイダーから選択します。
-
-![プロバイダー選択リスト](@site/docs/current/main/img/quickstart_aiprovidersettingslist.png)
-
-「カスタムプロバイダーを追加」をクリックすると、プロバイダーテンプレートから始めるか、手動設定で AI プロバイダーを追加します。
-
-![プロバイダー手動設定](@site/docs/current/main/img/quickstart_aiprovidersettingsmanual.png)
 
 
 ## 作業フォルダーを選ぶ

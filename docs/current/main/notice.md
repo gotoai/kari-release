@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 8
 slug: /notice
 title: Kari Notice
 description: The NOTICE file that accompanies Kari, with attributions for goose and bundled third-party components.

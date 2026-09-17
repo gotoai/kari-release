@@ -31,18 +31,18 @@ import styles from "./styles.module.css";
 
 // Counted download names, resolved by kari-license-manager's
 // config/download_mapping.yml.
-// const WINDOWS_DOWNLOAD_URL = "https://download.kari.gotoai.com/KariSetup-latest-x64.exe";
+const WINDOWS_DOWNLOAD_URL = "https://download.kari.gotoai.com/KariSetup-latest-x64.exe";
 const MACOS_SILICON_DOWNLOAD_URL = "https://download.kari.gotoai.com/Kari-latest-arm64.dmg";
 const MACOS_INTEL_DOWNLOAD_URL = "https://download.kari.gotoai.com/Kari-latest-x64.dmg";
 const LINUX_DOWNLOAD_URL = "https://download.kari.gotoai.com/kari_latest.deb";
 
 // Fallback: the release assets themselves. Must name the same files the
 // `latest` lines of download_mapping.yml point at; update both on a release.
-const GITHUB_RELEASE_URL = "https://github.com/gotoai/kari-release/releases/download/v0.5.0-beta/";
-// const WINDOWS_FALLBACK_URL = `${GITHUB_RELEASE_URL}KariSetup-0.5.0-beta-x64.exe`;
-const MACOS_SILICON_FALLBACK_URL = `${GITHUB_RELEASE_URL}Kari-0.5.0-beta-arm64.dmg`;
-const MACOS_INTEL_FALLBACK_URL = `${GITHUB_RELEASE_URL}Kari-0.5.0-beta-x64.dmg`;
-const LINUX_FALLBACK_URL = `${GITHUB_RELEASE_URL}kari_0.5.0~beta_amd64.deb`;
+const GITHUB_RELEASE_URL = "https://github.com/gotoai/kari-release/releases/download/v0.6.0/";
+const WINDOWS_FALLBACK_URL = `${GITHUB_RELEASE_URL}KariSetup-0.6.0-x64.exe`;
+const MACOS_SILICON_FALLBACK_URL = `${GITHUB_RELEASE_URL}Kari-0.6.0-arm64.dmg`;
+const MACOS_INTEL_FALLBACK_URL = `${GITHUB_RELEASE_URL}Kari-0.6.0-x64.dmg`;
+const LINUX_FALLBACK_URL = `${GITHUB_RELEASE_URL}kari_0.6.0_amd64.deb`;
 
 // How long the download server gets to answer the probe before the button
 // falls back to GitHub. Only the failure path waits this long.
@@ -59,9 +59,7 @@ interface DownloadLink {
 }
 
 const DOWNLOADS: Record<Platform, DownloadLink[]> = {
-  // Windows is in preparation: no href, so the card shows a disabled button.
-  // windows: [{ label: "Windows (x64)", href: WINDOWS_DOWNLOAD_URL, fallback: WINDOWS_FALLBACK_URL }],
-  windows: [{ label: "Windows (x64)" }],
+  windows: [{ label: "Windows (x64)", href: WINDOWS_DOWNLOAD_URL, fallback: WINDOWS_FALLBACK_URL }],
   macos: [
     { label: "Apple Silicon", href: MACOS_SILICON_DOWNLOAD_URL, fallback: MACOS_SILICON_FALLBACK_URL },
     { label: "Intel", href: MACOS_INTEL_DOWNLOAD_URL, fallback: MACOS_INTEL_FALLBACK_URL },
@@ -90,8 +88,7 @@ const TEXT: Record<Platform, { requirements: React.ReactNode; note: React.ReactN
     ),
     note: (
       <Translate id="kari.download.windows.note" description="Signing status of the Windows installer">
-        {/* Azure により署名済み */}
-        準備中
+        Microsoft Azure により署名済み
       </Translate>
     ),
   },

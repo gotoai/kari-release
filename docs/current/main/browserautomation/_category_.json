@@ -1,0 +1,10 @@
+{
+  "label": "Browser 処理自動化",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "title": "Browser 処理自動化",
+    "description": "AI による Web Browser の操作を自動化させる事例を紹介します。",
+    "slug": "/browserautomation"
+  }
+}

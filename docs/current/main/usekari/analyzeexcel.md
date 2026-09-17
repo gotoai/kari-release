@@ -9,7 +9,7 @@ title: Excelデータを集計する
 
 本ページの手順は、以下の環境で動作を確認しています。
 
-- **Kari**: バージョン 0.5.0 Beta
+- **Kari**: バージョン 0.5.0 Beta macOS
 - **AI プロバイダー**: スタンドアローン OumiGo (バージョン 0.3.0)
 - **GPU モデル**: RTX A6000
 - **LLM**: Google Gemma 4 31B IT (Google により量子化済み、Hugging Face リポジトリ: `google/gemma-4-31B-it-qat-w4a16-ct`)

@@ -1,9 +1,9 @@
 {
-  "label": "Kariを活用する",
-  "position": 2,
+  "label": "Kari を活用する",
+  "position": 6,
   "link": {
     "type": "generated-index",
-    "title": "Kariを活用する",
+    "title": "Kari を活用する",
     "description": "日々の仕事で Kari を使う具体的な事例です。",
     "slug": "/usekari"
   }
