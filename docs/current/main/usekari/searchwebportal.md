@@ -1,6 +1,6 @@
 ---
 sidebar_position: 9
-title: ウェブサイトのページを検索する
+title: ウェブサイトのページ検索
 ---
 
 # ウェブサイトのページを検索する
@@ -16,19 +16,18 @@ title: ウェブサイトのページを検索する
 
 :::
 
-Kari を活用し、AIによりウェブサイトのページを読み取り、条件に合う情報を検索・リストアップすることができます。AI検索を高速化させるため、複数のサブエージェントを活用します。
+Kari を活用し、AI によりウェブサイトのページを読み取り、条件に合う情報を検索・リストアップすることができます。AI 検索を高速化するため、複数のサブエージェントを活用します。
 
 ## インプット情報を確認
 
 - 国土交通省の国土数値情報ダウンロードサイトのトップページを開きます。  
 URL: https://nlftp.mlit.go.jp/ksj/
 
-
 ![国土数値情報ダウンロードサイト](@site/docs/current/main/usekari/img/usekari_searchwebportalpage.png)
 
-## AIに作業を指示
+## AI に作業を指示
 
-- 2025年1月1日以降に更新されたデータをリストアップします。以下のようにAIに作業を指示します。
+- 2025年1月1日以降に更新されたデータをリストアップします。以下のように AI に作業を指示します。
 
 > 国土数値情報ダウンロードサイトのポータル「[https://nlftp.mlit.go.jp/ksj/](https://nlftp.mlit.go.jp/ksj/)」 からページを読み、2025年1月1日以降に更新されたデータをリストアップしてください。  
 > 
@@ -51,13 +50,13 @@ URL: https://nlftp.mlit.go.jp/ksj/
 > (3) URL はページ内の相対リンクを「[https://nlftp.mlit.go.jp/](https://nlftp.mlit.go.jp/)」から始まる絶対 URL に直してください。  
 > (4) 最後に、対象となったデータの件数を報告してください。  
 
-![AIにウェブページの検索を指示する](@site/docs/current/main/usekari/img/usekari_searchwebportalinstruction.png)
+![AI にウェブページの検索を指示する](@site/docs/current/main/usekari/img/usekari_searchwebportalinstruction.png)
 
-## AIの作業結果を確認
+## AI の作業結果を確認
 
-- AIはページを読み取り、条件に合うデータの一覧をセッションウィンドウに表として出力します。件数と日付の範囲を確認します。
+- AI はページを読み取り、条件に合うデータの一覧をセッションウィンドウに表として出力します。件数と日付の範囲を確認します。
 
-![AIが出力したデータ一覧](@site/docs/current/main/usekari/img/usekari_searchwebportalresult.png)
+![AI が出力したデータ一覧](@site/docs/current/main/usekari/img/usekari_searchwebportalresult.png)
 
 - 一覧の URL をいくつか開き、データ名と更新履歴が元のページと一致していることを確認します。
 
