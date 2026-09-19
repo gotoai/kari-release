@@ -3,16 +3,28 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.docs.category.Kariを活用する": {
+  "sidebar.docs.category.Kari を活用する": {
     "message": "Using Kari",
-    "description": "The label for category 'Kariを活用する' in sidebar 'docs'"
+    "description": "The label for category 'Kari を活用する' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Kariを活用する.link.generated-index.title": {
+  "sidebar.docs.category.Kari を活用する.link.generated-index.title": {
     "message": "Using Kari",
-    "description": "The generated-index page title for category 'Kariを活用する' in sidebar 'docs'"
+    "description": "The generated-index page title for category 'Kari を活用する' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Kariを活用する.link.generated-index.description": {
+  "sidebar.docs.category.Kari を活用する.link.generated-index.description": {
     "message": "Step-by-step guides for using Kari in everyday work.",
-    "description": "The generated-index page description for category 'Kariを活用する' in sidebar 'docs'"
+    "description": "The generated-index page description for category 'Kari を活用する' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Browser 処理自動化": {
+    "message": "Browser automation",
+    "description": "The label for category 'Browser 処理自動化' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Browser 処理自動化.link.generated-index.title": {
+    "message": "Browser automation",
+    "description": "The generated-index page title for category 'Browser 処理自動化' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Browser 処理自動化.link.generated-index.description": {
+    "message": "Examples of having the AI automate work in a web browser.",
+    "description": "The generated-index page description for category 'Browser 処理自動化' in sidebar 'docs'"
   }
 }
