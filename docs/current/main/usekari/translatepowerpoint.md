@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: パワーポイントを翻訳する
+title: パワーポイントの翻訳
 ---
 
 # パワーポイントを翻訳する
@@ -9,7 +9,7 @@ title: パワーポイントを翻訳する
 
 本ページの手順は、以下の環境で動作を確認しています。
 
-- **Kari**: バージョン 0.5.0 Beta
+- **Kari**: バージョン 0.5.0 Beta macOS
 - **AI プロバイダー**: スタンドアローン OumiGo (バージョン 0.3.0)
 - **GPU モデル**: A40
 - **LLM**: Google Gemma 4 31B IT (Google により量子化済み、Hugging Face リポジトリ: `google/gemma-4-31B-it-qat-w4a16-ct`)
@@ -20,21 +20,21 @@ Kari を活用して、手元のパワーポイントを他の言語に翻訳で
 
 ## インプット情報を確認
 
-- Kari のエクスプローラーでファイルの格納フォルダーを開いて、ファイルをクリックして内容を表示させます。  
-なお、例示用のPPTXファイルは、厚生労働省 イクメンプロジェクトのホームページ「資料ダウンロード」の研修用資料（社内研修用）「若年層向け（若手社員・大学生向け）」の PPTX 版 (`training_young2023.pptx`) をダウンロードすることができます。ここでは `Files` フォルダーに保存しています。  
+- Kari のエクスプローラーでファイルの格納フォルダーを開き、対象のファイルをクリックして内容を表示させます。  
+なお、例示用のPPTXファイルとして、厚生労働省 イクメンプロジェクトのホームページ「資料ダウンロード」の研修用資料（社内研修用）「若年層向け（若手社員・大学生向け）」の PPTX 版（`training_young2023.pptx`）をダウンロードできます。ここでは `Files` フォルダーに保存しています。  
 URL: https://ikumen-project.mhlw.go.jp/library/training/
 
-## AIに作業を指示
+## AI に作業を指示
 
-- 新しいチャットセッションを作成し、インプットボックスに「このPPTXファイルを英語版に翻訳し、ファイル「Files/training_young2023_en.pptx」として保存してください。」を入力し、AIに作業を指示します。
+- 新しいチャットセッションを作成し、インプットボックスに「このPPTXファイルを英語版に翻訳し、ファイル「Files/training_young2023_en.pptx」として保存してください。」と入力し、AI に作業を指示します。
 
-![AIにPPTX翻訳を指示する](@site/docs/current/main/usekari/img/usekari_translatepptxinstruction.png)
+![AI にPPTX翻訳を指示する](@site/docs/current/main/usekari/img/usekari_translatepptxinstruction.png)
 
-## AIの作業結果を確認
+## AI の作業結果を確認
 
-- AIが翻訳したファイルをローカルフォルダーに保存します。ファイルを開いて結果を確認します。
+- AI は翻訳したファイルをローカルフォルダーに保存します。ファイルを開いて結果を確認します。
 
-![AIのPPTX翻訳結果を確認する](@site/docs/current/main/usekari/img/usekari_translatepptxresult.png)
+![AI のPPTX翻訳結果を確認する](@site/docs/current/main/usekari/img/usekari_translatepptxresult.png)
 
 :::caution
 

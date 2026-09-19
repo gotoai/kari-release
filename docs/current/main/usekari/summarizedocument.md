@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: PDF・ワード文書を要約する
+title: PDF・ワード文書の要約
 ---
 
 # PDF・ワード文書を要約する
@@ -20,25 +20,25 @@ Kari を活用して、手元の文書の要約を作成できます。PDF、ワ
 
 ## インプット情報を確認
 
-- Kari のエクスプローラーでファイルの格納フォルダーを開いて、ファイルをクリックして内容を表示させます。  
+- Kari のエクスプローラーでファイルの格納フォルダーを開き、対象のファイルをクリックして内容を表示させます。  
 なお、例示用のPDFファイルは、内閣府のホームページ「人工知能基本計画」からダウンロードすることができます（令和7年12月23日閣議決定版）。  
 URL: https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_20251223.pdf
 
-## AIに作業を指示
+## AI に作業を指示
 
-- 新しいチャットセッションを作成し、インプットボックスに「この文章の要約を作成してください。」を入力し、AIに作業を指示します。
+- 新しいチャットセッションを作成し、インプットボックスに「この文章の要約を作成してください。」と入力し、AI に作業を指示します。
 
-![文章の要約をAIで作成する](@site/docs/current/main/usekari/img/usekari_summarizeinstruction.png)
+![文章の要約を AI で作成する](@site/docs/current/main/usekari/img/usekari_summarizeinstruction.png)
 
-## AIの作業結果を確認
+## AI の作業結果を確認
 
-- AIは指示を受けて文章の要約を作成して、セッションのウィンドウで出力します。
+- AI は指示を受けて文章の要約を作成し、セッションウィンドウに出力します。
 
-![AIが作成した文章の要約](@site/docs/current/main/usekari/img/usekari_summarizeresult.png)
+![AI が作成した文章の要約](@site/docs/current/main/usekari/img/usekari_summarizeresult.png)
 
-## AIに追加作業を指示
+## AI に追加作業を指示
 
-- 特定の側面などで追加質問をAIに問い合わせすることもできます。
+- 特定の観点について、追加の質問を AI に投げかけることもできます。
 
 ![追加質問対応](@site/docs/current/main/usekari/img/usekari_summarizemorequestion.png)
 
