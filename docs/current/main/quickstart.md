@@ -32,9 +32,8 @@ Kari (かり・日本語「雁」の意味) は、ローカルファイルをAI�
 <DownloadTabs>
   <TabItem value="windows" label="Windows">
     <DownloadCard platform="windows" />
-
-<!-- 
-    1. ダウンロードしたインストーラー（KariSetup-バージョン-x64.exe）を実行します。
+ 
+    1. ダウンロードしたインストーラー（KariSetup-&lt;バージョン&gt;-x64.exe）を実行します。
     2. インストーラーの指示に従ってインストールし、スタートメニューまたはデスクトップから Kari を起動します。
 
     ![Windows のインストーラー画面](@site/docs/current/main/img/quickstart_windowsinstallstart.png)
@@ -42,7 +41,7 @@ Kari (かり・日本語「雁」の意味) は、ローカルファイルをAI�
     ![Windows のインストーラー画面](@site/docs/current/main/img/quickstart_windowsinstallprogress.png)
 
     ![Windows のインストーラー画面](@site/docs/current/main/img/quickstart_windowsinstallcomplete.png)
--->
+
   </TabItem>
   <TabItem value="macos" label="macOS">
     <DownloadCard platform="macos" />
