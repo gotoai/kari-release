@@ -359,7 +359,7 @@
     "description": "Supported Windows versions"
   },
   "kari.download.windows.note": {
-    "message": "Coming soon",
+    "message": "Signed by Microsoft Azure",
     "description": "Signing status of the Windows installer"
   },
   "kari.download.macos.requirements": {
