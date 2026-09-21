@@ -36,7 +36,12 @@ URL: https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/b22100
 
 ## Instruct the AI
 
-- Enter the URL of the answer page in the session's input box and ask the AI to summarize the main points.
+- Enter the URL of the answer page in the session's input box and ask the AI to summarize the main points. Instruct the AI as follows. The prompt below is an English rendering of the Japanese prompt shown in the screenshot.
+
+```text title="Prompt for the AI"
+Summarize the main points of this answer page as a bulleted list.
+https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/b221002.htm
+```
 
 ![Asking the AI to summarize the page](@site/docs/current/main/usekari/img/usekari_summarizewebmeetingminuteprompt.png)
 

@@ -31,26 +31,28 @@ URL: https://nlftp.mlit.go.jp/ksj/
 
 - We list the datasets updated on or after January 1, 2025. Instruct the AI as follows. The prompt below is an English rendering of the Japanese prompt shown in the screenshot.
 
-> Starting from the portal of the National Land Numerical Information download site, "[https://nlftp.mlit.go.jp/ksj/](https://nlftp.mlit.go.jp/ksj/)", read the pages and list the datasets updated on or after January 1, 2025.
->
-> 1. How to read  
-> (1) From the portal, open each dataset's page.  
-> (2) At the top of each dataset page there is a sentence of the form 「選択したデータ項目は、国土数値情報　〇〇データ　です。」 ("The selected data item is National Land Numerical Information: 〇〇 data."). The 〇〇 part is the dataset name.  
-> (3) Below it there is a table whose first row is the update history (「更新履歴」), from which you can find the dataset's update dates.  
->  - The update history row may contain several lines; in that case the first line is the most recent update.  
->  - Each update history entry begins with the year of the update, in the Western or Japanese calendar, or with the update date. If an entry cannot be parsed, you may skip it.  
->  - You may skip dataset pages that have no update history.  
-> (4) You may use up to 5 subagents.
->
-> 2. Aggregation method  
-> (1) Include only items dated 2025/01/01 or later.  
-> (2) If the same dataset was updated more than once, keep only the most recent entry.
->
-> 3. Output  
-> (1) Produce a table with three columns: dataset name, latest update date, and URL.  
-> (2) Sort it by date, newest first.  
-> (3) Convert relative links on the pages into absolute URLs starting with "[https://nlftp.mlit.go.jp/](https://nlftp.mlit.go.jp/)".  
-> (4) Finally, report how many datasets matched.
+```text title="Prompt for the AI"
+Starting from the portal of the National Land Numerical Information download site, "https://nlftp.mlit.go.jp/ksj/", read the pages and list the datasets updated on or after January 1, 2025.
+
+1. How to read
+(1) From the portal, open each dataset's page.
+(2) At the top of each dataset page there is a sentence of the form 「選択したデータ項目は、国土数値情報　〇〇データ　です。」 ("The selected data item is National Land Numerical Information: 〇〇 data."). The 〇〇 part is the dataset name.
+(3) Below it there is a table whose first row is the update history (「更新履歴」), from which you can find the dataset's update dates.
+ - The update history row may contain several lines; in that case the first line is the most recent update.
+ - Each update history entry begins with the year of the update, in the Western or Japanese calendar, or with the update date. If an entry cannot be parsed, you may skip it.
+ - You may skip dataset pages that have no update history.
+(4) You may use up to 5 subagents.
+
+2. Aggregation method
+(1) Include only items dated 2025/01/01 or later.
+(2) If the same dataset was updated more than once, keep only the most recent entry.
+
+3. Output
+(1) Produce a table with three columns: dataset name, latest update date, and URL.
+(2) Sort it by date, newest first.
+(3) Convert relative links on the pages into absolute URLs starting with "https://nlftp.mlit.go.jp/".
+(4) Finally, report how many datasets matched.
+```
 
 ![Asking the AI to search the website](@site/docs/current/main/usekari/img/usekari_searchwebportalinstruction.png)
 

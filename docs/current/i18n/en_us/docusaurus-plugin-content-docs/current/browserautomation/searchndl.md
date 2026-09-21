@@ -50,31 +50,33 @@ This system also publishes a search API. The AI may decide for itself to use the
 
 - Set out the background of the investigation, the search approach, the output format and the handling of quotations together, and instruct the AI as follows. The prompt below is an English rendering of the Japanese prompt shown in the screenshot.
 
-> Starting from the Diet proceedings search system that is currently open, investigate the debate in the Diet on AI safety and regulation, and report the results.
->
-> 0. Access rules to observe
-> (1) Leave at least one second between page transitions, and do not make concurrent requests.
-> (2) If a CAPTCHA, an access restriction, or an error screen appears, do not try to work around it — stop and report it.
->
-> 1. Background: the slowing of frontier AI development is currently under debate, and the aim is to understand, from what was actually said in the Diet, how Japan's legislature and administration have viewed AI safety and risk.
->
-> 2. Search approach
-> (1) Use the Browser tool; do not use the Web Fetch tool.
-> (2) Focus mainly on the last three years.
-> (3) Devise the search conditions and keywords as appropriate.
-> (4) Search across both houses and all meeting names without narrowing; narrow to particular committees only where there are too many hits.
->
-> 3. Output
-> (1) In the chat reply, as bullet points plus tables.
-> (2) The main items to report:
-> 　(i) A list of the proceedings you examined
-> 　(ii) A structured breakdown by point of contention. The point (for example, safety evaluation / regulatory approach / international coordination / balance against industrial competitiveness) × the main claims × the speaker's standpoint.
-> 　(iii) The trends, fault lines, problems and implications you can see
-> 　(iv) A list of the search conditions you used and the number of hits for each
->
-> 4. Handling of quotations
-> (1) Quotations of statements must cut across several speakers within each point of contention; do not structure the output as a collection of one particular person's statements.
-> (2) Quotations must be strictly factual — do not infer or fill in anything.
+```text title="Prompt for the AI"
+Starting from the Diet proceedings search system that is currently open, investigate the debate in the Diet on AI safety and regulation, and report the results.
+
+0. Access rules to observe
+(1) Leave at least one second between page transitions, and do not make concurrent requests.
+(2) If a CAPTCHA, an access restriction, or an error screen appears, do not try to work around it — stop and report it.
+
+1. Background: the slowing of frontier AI development is currently under debate, and the aim is to understand, from what was actually said in the Diet, how Japan's legislature and administration have viewed AI safety and risk.
+
+2. Search approach
+(1) Use the Browser tool; do not use the Web Fetch tool.
+(2) Focus mainly on the last three years.
+(3) Devise the search conditions and keywords as appropriate.
+(4) Search across both houses and all meeting names without narrowing; narrow to particular committees only where there are too many hits.
+
+3. Output
+(1) In the chat reply, as bullet points plus tables.
+(2) The main items to report:
+　(i) A list of the proceedings you examined
+　(ii) A structured breakdown by point of contention. The point (for example, safety evaluation / regulatory approach / international coordination / balance against industrial competitiveness) × the main claims × the speaker's standpoint.
+　(iii) The trends, fault lines, problems and implications you can see
+　(iv) A list of the search conditions you used and the number of hits for each
+
+4. Handling of quotations
+(1) Quotations of statements must cut across several speakers within each point of contention; do not structure the output as a collection of one particular person's statements.
+(2) Quotations must be strictly factual — do not infer or fill in anything.
+```
 
 ![Instructing the AI to investigate the Diet proceedings](@site/docs/current/main/browserautomation/img/search_ndl_prompt.png)
 

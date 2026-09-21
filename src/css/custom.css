@@ -34,3 +34,11 @@
   font-size: 1.1rem;
   padding-left: 0;
 }
+
+/* AI prompts are written as ```text blocks so they copy verbatim. They are prose,
+   not code, so wrap them instead of scrolling sideways. Other languages keep the
+   default behaviour and Docusaurus's word-wrap toggle. */
+pre.language-text code {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}

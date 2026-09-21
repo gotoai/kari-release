@@ -53,33 +53,35 @@ The same applies to an internal system or a closed site that requires signing in
 
 - Set out the scope, the file-naming rule and the access rules together, and instruct the AI as follows. The prompt below is an English rendering of the Japanese prompt shown in the screenshot; the link texts and file names are quoted as they appear on the Japanese source page.
 
-> From the Japan Tourism Agency's Consumption Trend Survey page that is currently open, download the Excel tables and save them under the defined file-name format.
->
-> 0. Access rules to observe
-> (1) Leave at least one second between page transitions, and do not make concurrent requests.
-> (2) If a CAPTCHA, an access restriction, or an error screen appears, do not try to work around it — stop and report it.
->
-> 1. Approach
-> (1) Use the Browser tool; do not use the Web Fetch tool.
-> (2) Perform no write operations other than downloading.
-> (3) Only the Excel files for 「xx-xx月期 集計表」, 「xx年間 集計表」 and 「xx 都道府県別集計表」 are in scope.
-> (4) Limit this to the last three years (annual plus quarterly).
->
-> 2. Saving the files
-> (1) Save them in the current session folder.
-> (2) Base the file name on the download link's text: take the part from the digits that indicate the period through to 「集計表」, then take the year of the data from the page structure and prefix it to the text. For example:
-> 　・「2024年10-12月期 集計表」
-> 　・「2024年年間 集計表」
-> 　・「2024年10-12月期 【参考】都道府県別集計表」
-> 　・「2024年年間 【参考】都道府県集計表」
-> 　・「2026年4-6月期 集計表（1次速報）」
-> 　・「2026年1-3月期 【参考】都道府県別集計表」
-> (3) Keep the original file extension.
->
-> 3. Chat output: besides saving the files, report in the chat reply as bullet points plus a table.
-> (1) A table of the files saved: new file name / original ID / link text / file size / source URL.
-> (2) State explicitly anything that could not be downloaded, or that you could not decide a name for.
-> (3) State the source (source: Ministry of Land, Infrastructure, Transport and Tourism website, with the page URL).
+```text title="Prompt for the AI"
+From the Japan Tourism Agency's Consumption Trend Survey page that is currently open, download the Excel tables and save them under the defined file-name format.
+
+0. Access rules to observe
+(1) Leave at least one second between page transitions, and do not make concurrent requests.
+(2) If a CAPTCHA, an access restriction, or an error screen appears, do not try to work around it — stop and report it.
+
+1. Approach
+(1) Use the Browser tool; do not use the Web Fetch tool.
+(2) Perform no write operations other than downloading.
+(3) Only the Excel files for 「xx-xx月期 集計表」, 「xx年間 集計表」 and 「xx 都道府県別集計表」 are in scope.
+(4) Limit this to the last three years (annual plus quarterly).
+
+2. Saving the files
+(1) Save them in the current session folder.
+(2) Base the file name on the download link's text: take the part from the digits that indicate the period through to 「集計表」, then take the year of the data from the page structure and prefix it to the text. For example:
+　・「2024年10-12月期 集計表」
+　・「2024年年間 集計表」
+　・「2024年10-12月期 【参考】都道府県別集計表」
+　・「2024年年間 【参考】都道府県集計表」
+　・「2026年4-6月期 集計表（1次速報）」
+　・「2026年1-3月期 【参考】都道府県別集計表」
+(3) Keep the original file extension.
+
+3. Chat output: besides saving the files, report in the chat reply as bullet points plus a table.
+(1) A table of the files saved: new file name / original ID / link text / file size / source URL.
+(2) State explicitly anything that could not be downloaded, or that you could not decide a name for.
+(3) State the source (source: Ministry of Land, Infrastructure, Transport and Tourism website, with the page URL).
+```
 
 ![Instructing the AI to do the downloading](@site/docs/current/main/browserautomation/img/download_jta_prompt.png)
 

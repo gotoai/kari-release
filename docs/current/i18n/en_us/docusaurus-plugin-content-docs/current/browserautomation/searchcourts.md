@@ -52,31 +52,33 @@ URL: https://www.courts.go.jp/hanrei/search1/index.html
 
 - Set out the search conditions and the output format, together with four constraints — **no statistical analysis, anonymization, identifying information alongside every quotation, and an explicit statement that this is not legal advice** — and instruct the AI as follows. The prompt below is an English rendering of the Japanese prompt shown in the screenshot.
 
-> Starting from the courts' precedent search page that is currently open, look into precedents on workplace power harassment and set out the categories and the key points of the courts' reasoning.
->
-> 0. Access rules to observe
-> (1) Use the Browser tool; do not use the Web Fetch tool.
-> (2) View only; perform no write operations.
-> (3) Run requests one at a time with at least two seconds between them. At most 12 searches, and at most 30 judgments opened. If you reach a limit, report on what you have.
-> (4) If an error or an access restriction appears, do not work around it — stop and report.
->
-> 1. Search conditions
-> (1) Judgment dates within the last five years.
-> (2) Match the search terms to the vocabulary of judgments: build on 「パワーハラスメント」 and combine it with related terms as appropriate.
-> (3) For a search returning more than 100 hits, add conditions before looking at the results.
->
-> 2. Output
-> (1) In the chat reply, as bullet points plus tables.
-> (2) Items for the list of precedents: court name / judgment date / case number / type of defendant (private company, or the state or a local government) / industry.
-> (3) Anything whose case number you cannot confirm must be kept out of the list and shown separately as "unconfirmed"; do not fill it in by inference.
-> (4) Category table: organized around the Ministry of Health, Labour and Welfare's six categories (physical attack / psychological attack / isolation from others / excessive demands / under-demanding assignments / intrusion into private life), giving the typical facts / the factors that determine unlawfulness / the outcome (granted or dismissed) / the range of awards. Anything that does not fit goes under "other".
-> (5) The trends, problems and implications, plus the search conditions you ran and the number of hits for each.
->
-> 3. Other requirements
-> (1) Because the precedent search is not exhaustive of all judgments, do not perform statistical analysis such as case distribution, time trends or correlation with industry.
-> (2) Anonymization: do not name defendant companies — describe them by industry and size (naming the state or a local government is allowed). Anonymize individual parties as "plaintiff X", "supervisor A" and so on.
-> (3) When quoting a judgment, always give the court name, judgment date and case number alongside.
-> 　(4) State at the top that "this report is not legal advice".
+```text title="Prompt for the AI"
+Starting from the courts' precedent search page that is currently open, look into precedents on workplace power harassment and set out the categories and the key points of the courts' reasoning.
+
+0. Access rules to observe
+(1) Use the Browser tool; do not use the Web Fetch tool.
+(2) View only; perform no write operations.
+(3) Run requests one at a time with at least two seconds between them. At most 12 searches, and at most 30 judgments opened. If you reach a limit, report on what you have.
+(4) If an error or an access restriction appears, do not work around it — stop and report.
+
+1. Search conditions
+(1) Judgment dates within the last five years.
+(2) Match the search terms to the vocabulary of judgments: build on 「パワーハラスメント」 and combine it with related terms as appropriate.
+(3) For a search returning more than 100 hits, add conditions before looking at the results.
+
+2. Output
+(1) In the chat reply, as bullet points plus tables.
+(2) Items for the list of precedents: court name / judgment date / case number / type of defendant (private company, or the state or a local government) / industry.
+(3) Anything whose case number you cannot confirm must be kept out of the list and shown separately as "unconfirmed"; do not fill it in by inference.
+(4) Category table: organized around the Ministry of Health, Labour and Welfare's six categories (physical attack / psychological attack / isolation from others / excessive demands / under-demanding assignments / intrusion into private life), giving the typical facts / the factors that determine unlawfulness / the outcome (granted or dismissed) / the range of awards. Anything that does not fit goes under "other".
+(5) The trends, problems and implications, plus the search conditions you ran and the number of hits for each.
+
+3. Other requirements
+(1) Because the precedent search is not exhaustive of all judgments, do not perform statistical analysis such as case distribution, time trends or correlation with industry.
+(2) Anonymization: do not name defendant companies — describe them by industry and size (naming the state or a local government is allowed). Anonymize individual parties as "plaintiff X", "supervisor A" and so on.
+(3) When quoting a judgment, always give the court name, judgment date and case number alongside.
+　(4) State at the top that "this report is not legal advice".
+```
 
 ![Instructing the AI to investigate court precedents](@site/docs/current/main/browserautomation/img/search_courts_prompt.png)
 

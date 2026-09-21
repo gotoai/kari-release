@@ -62,35 +62,37 @@ The AI uses the browser session you signed in with, as it is. An internal social
 
 - Set out the scope of collection, the definitions for classification and the access rules together, and instruct the AI as follows. The prompt below is an English rendering of the Japanese prompt shown in the screenshot.
 
-> Starting from the mastodon.social Explore page that is currently open, collect public posts about slowing down frontier AI development, organize the points of contention and report back.
->
-> 0. Access rules to observe
-> (1) Run requests serially, one at a time, leaving at least 1.5 seconds between each.
-> (2) View at most 10 tags and read at most 100 posts in total.
-> (3) Do not download images or video.
-> (4) If a CAPTCHA, an access restriction, or an error screen appears, do not try to work around it — stop and report it.
-> (5) Write operations of every kind are forbidden. View only.
->
-> 1. Tools: use the Browser tool; do not use the Web Fetch tool.
->
-> 2. Scope of the survey
-> (1) As a rule, cover posts in Japanese and English made within the last 72 hours.
-> (2) Only posts that address whether frontier AI development should be slowed down are in scope. General mentions of AI, product announcements, posts of AI-generated images and the like are out of scope.
-> (3) Exclude obvious bot posts, automatic reposts of news headlines, and duplicate boosts of identical content.
-> (4) You may stop collecting once you judge that no new points are appearing (saturation). Report the basis for that judgement.
->
-> 3. Classifying the position taken (use the following definitions)
-> 　・For: holds that development should be slowed down
-> 　・Against: holds that it should not be slowed down, that development should continue or accelerate
-> 　・Neutral / both sides: conditional, only laying out the arguments, or readable either way
-> 　・Undeterminable: irony, sarcasm, or too little context to fix a position. Do not force a position onto anything classed as undeterminable.
->
-> 4. Output (in the chat reply, as bullet points plus tables)
-> (1) A record of the collection conditions: the tag names viewed, the time of collection (UTC), the period covered, the number of posts read.
-> (2) Counts by position. Always include this note: "This is the breakdown within the collected sample and is not representative of the population."
-> (3) A breakdown by point of contention. Point (for example, demonstrability of safety / regulatory approach / international competition / environmental cost / employment) × the gist of the claim × the position.
-> (4) For each point, give one or two post URLs as typical examples.
-> (5) The trends, the fault lines and the implications you can see. If a particular news event within the last 72 hours is driving the discussion, name it.
+```text title="Prompt for the AI"
+Starting from the mastodon.social Explore page that is currently open, collect public posts about slowing down frontier AI development, organize the points of contention and report back.
+
+0. Access rules to observe
+(1) Run requests serially, one at a time, leaving at least 1.5 seconds between each.
+(2) View at most 10 tags and read at most 100 posts in total.
+(3) Do not download images or video.
+(4) If a CAPTCHA, an access restriction, or an error screen appears, do not try to work around it — stop and report it.
+(5) Write operations of every kind are forbidden. View only.
+
+1. Tools: use the Browser tool; do not use the Web Fetch tool.
+
+2. Scope of the survey
+(1) As a rule, cover posts in Japanese and English made within the last 72 hours.
+(2) Only posts that address whether frontier AI development should be slowed down are in scope. General mentions of AI, product announcements, posts of AI-generated images and the like are out of scope.
+(3) Exclude obvious bot posts, automatic reposts of news headlines, and duplicate boosts of identical content.
+(4) You may stop collecting once you judge that no new points are appearing (saturation). Report the basis for that judgement.
+
+3. Classifying the position taken (use the following definitions)
+　・For: holds that development should be slowed down
+　・Against: holds that it should not be slowed down, that development should continue or accelerate
+　・Neutral / both sides: conditional, only laying out the arguments, or readable either way
+　・Undeterminable: irony, sarcasm, or too little context to fix a position. Do not force a position onto anything classed as undeterminable.
+
+4. Output (in the chat reply, as bullet points plus tables)
+(1) A record of the collection conditions: the tag names viewed, the time of collection (UTC), the period covered, the number of posts read.
+(2) Counts by position. Always include this note: "This is the breakdown within the collected sample and is not representative of the population."
+(3) A breakdown by point of contention. Point (for example, demonstrability of safety / regulatory approach / international competition / environmental cost / employment) × the gist of the claim × the position.
+(4) For each point, give one or two post URLs as typical examples.
+(5) The trends, the fault lines and the implications you can see. If a particular news event within the last 72 hours is driving the discussion, name it.
+```
 
 ![Instructing the AI to collect social media posts](@site/docs/current/main/browserautomation/img/search_sns_search_prompt.png)
 
