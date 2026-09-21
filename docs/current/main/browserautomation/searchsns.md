@@ -11,7 +11,7 @@ title: SNS におけるパブリック・オピニオン分析
 
 - **Kari**: バージョン 0.6.0 Windows
 - **AI プロバイダー**: Anthropic Claude サブスクリプション
-- **モデル**: Opus 5 (1M)
+- **モデル**: Anthropic Opus 5 (1M)
 
 :::
 

@@ -11,7 +11,7 @@ title: 政府統計データの検索・分析の自動化
 
 - **Kari**: バージョン 0.6.0 Windows
 - **AI プロバイダー**: Anthropic Claude サブスクリプション
-- **モデル**: Opus 5 (1M)
+- **モデル**: Anthropic Opus 5 (1M)
 
 :::
 
