@@ -39,19 +39,21 @@ URL: https://github.com/mmorise/rohan4600
 
 - We search for sentences in which the speaker's emotion seems intense. Instruct the AI as follows. The prompt below is an English rendering of the Japanese prompt shown in the screenshot.
 
-> Under the folder "rohan4600", search the HTML, PDF and Word files, identify the sentences whose content meets the requirement, and output the information requested.
->
-> 1. Input  
-> (1) The files under the local folder "rohan4600".
->
-> 2. Search requirements  
-> (1) The search covers all HTML, PDF and Word files under the folder "rohan4600".  
-> (2) The search condition is: sentences in the files in which the speaker's emotion seems intense.  
-> (3) You may use up to 10 subagents.
->
-> 3. The output has two parts.  
-> (1) Search summary: a table with five columns, "file type", "files searched", "files matched", "sentences searched" and "sentences matched", and three rows, "HTML", "PDF" and "Word".  
-> (2) List of matched sentences: a table with three columns, "matched sentence", "reason for the judgement" and "file path".
+```text title="Prompt for the AI"
+Under the folder "rohan4600", search the HTML, PDF and Word files, identify the sentences whose content meets the requirement, and output the information requested.
+
+1. Input
+(1) The files under the local folder "rohan4600".
+
+2. Search requirements
+(1) The search covers all HTML, PDF and Word files under the folder "rohan4600".
+(2) The search condition is: sentences in the files in which the speaker's emotion seems intense.
+(3) You may use up to 10 subagents.
+
+3. The output has two parts.
+(1) Search summary: a table with five columns, "file type", "files searched", "files matched", "sentences searched" and "sentences matched", and three rows, "HTML", "PDF" and "Word".
+(2) List of matched sentences: a table with three columns, "matched sentence", "reason for the judgement" and "file path".
+```
 
 ![Asking the AI to search the folder](@site/docs/current/main/usekari/img/usekari_searchlocalfolderinstruction.png)
 

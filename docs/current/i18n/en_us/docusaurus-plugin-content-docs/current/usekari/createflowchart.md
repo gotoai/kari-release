@@ -41,32 +41,34 @@ URL: https://www.kaigokensaku.mhlw.go.jp/commentary/flow.html
 
 - Ask the AI to create the flowchart, giving it the URL of the page. Instruct it as follows. Having the AI write out what it understood before drawing lets you catch reading errors before anything is drawn. The prompt below is an English rendering of the Japanese prompt shown in the screenshot.
 
-> Create a flowchart of the steps to using long-term care services.
->
-> 1. Understanding the content  
-> (1) Read this page and understand the whole picture.  
-> https://www.kaigokensaku.mhlw.go.jp/commentary/flow.html  
-> (2) Before drawing, write out what you understood in the following form and show it to me:  
->  - Steps: number, name, who carries it out  
->  - Branches: the branch point and the condition for each branch  
->  - Outputs: documents or results produced at each step  
->  - Other: conditions and so on
->
-> 2. Layout of the diagram  
-> (1) Give the diagram a title.  
-> (2) Flow from left to right as a rule, place branch targets above and below each other, and make sure no line crosses another box.  
-> (3) Below the diagram, state the page name and URL above as the source, in small text.
->
-> 3. Drawing conditions  
-> (1) Create a PNG of 1920 x 1080 pixels and save it as 「介護サービス利用の流れ.png」.  
-> (2) Lay out the diagram so that it uses about 90% of the canvas, with equal margins on all four sides.  
-> (3) Make sure no boxes overlap and no text overlaps.
->
-> 4. Checking  
-> (1) After saving, open the image and check the following; if there is a problem, fix it and save again (up to three times).  
->  - No garbled characters such as "□" → if there are, try another font that does not garble.  
->  - Text fits inside its box and nothing runs off the canvas.  
-> (2) Finally, report the steps, branches and outputs included in the diagram as a bulleted list.
+```text title="Prompt for the AI"
+Create a flowchart of the steps to using long-term care services.
+
+1. Understanding the content
+(1) Read this page and understand the whole picture.
+https://www.kaigokensaku.mhlw.go.jp/commentary/flow.html
+(2) Before drawing, write out what you understood in the following form and show it to me:
+ - Steps: number, name, who carries it out
+ - Branches: the branch point and the condition for each branch
+ - Outputs: documents or results produced at each step
+ - Other: conditions and so on
+
+2. Layout of the diagram
+(1) Give the diagram a title.
+(2) Flow from left to right as a rule, place branch targets above and below each other, and make sure no line crosses another box.
+(3) Below the diagram, state the page name and URL above as the source, in small text.
+
+3. Drawing conditions
+(1) Create a PNG of 1920 x 1080 pixels and save it as 「介護サービス利用の流れ.png」.
+(2) Lay out the diagram so that it uses about 90% of the canvas, with equal margins on all four sides.
+(3) Make sure no boxes overlap and no text overlaps.
+
+4. Checking
+(1) After saving, open the image and check the following; if there is a problem, fix it and save again (up to three times).
+ - No garbled characters such as "□" → if there are, try another font that does not garble.
+ - Text fits inside its box and nothing runs off the canvas.
+(2) Finally, report the steps, branches and outputs included in the diagram as a bulleted list.
+```
 
 ![Asking the AI to create the flowchart](@site/docs/current/main/usekari/img/usekari_createflowchartinstruction.png)
 

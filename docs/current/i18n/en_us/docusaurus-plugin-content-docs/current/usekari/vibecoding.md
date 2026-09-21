@@ -33,12 +33,14 @@ We build a demo web mail application. It has three screens — login, mail list 
 
 - Specify the screen flow, the number of items and the time window, the paging, and the technology stack. Instruct the AI as follows. The prompt below is an English rendering of the Japanese prompt shown in the screenshot.
 
-> Under the folder "webmail_demo" I have open, create a source code tree.
->
-> 1. It is a demo web mail application. The screen flow is: login page → mail list page → click a mail to open the detail page.  
-> 2. The list shows about 100 mails from the last 30 days, counted from the system date at the time it runs.  
-> 3. The list is paged, with 20 mails per page.  
-> 4. Use Python + FastAPI + Jinja2 as the technology stack.
+```text title="Prompt for the AI"
+Under the folder "webmail_demo" I have open, create a source code tree.
+
+1. It is a demo web mail application. The screen flow is: login page → mail list page → click a mail to open the detail page.
+2. The list shows about 100 mails from the last 30 days, counted from the system date at the time it runs.
+3. The list is paged, with 20 mails per page.
+4. Use Python + FastAPI + Jinja2 as the technology stack.
+```
 
 ![Asking the AI to create the source code](@site/docs/current/main/usekari/img/usekari_vibecodinginstruction.png)
 

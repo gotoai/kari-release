@@ -48,22 +48,24 @@ e-Stat provides an API for retrieving statistical data automatically. **For rout
 
 - Set out the theme you want to investigate together with the constraints specific to statistical data — stating the source, and distinguishing calculated values — and instruct the AI as follows. The prompt below is an English rendering of the Japanese prompt shown in the screenshot.
 
-> From the e-Stat page that is currently open, find datasets on the wage situation of non-regular employment in Japan's food service industry, extract and organize the figures you need, and report the results.
->
-> 0. Access rules to observe
-> (1) Do not send requests in rapid succession. Leave at least one second between page transitions, and do not make concurrent requests.
-> (2) If a CAPTCHA, an access restriction, or an error screen appears, do not try to work around it — stop and report it.
-> (3) Always state the source in the output (the portal site for official statistics of Japan (e-Stat), plus the survey name and the statistical table name).
-> (4) Show any figure you calculated yourself in a form that distinguishes it from the government's published figures.
->
-> 1. Use the Browser tool; do not use the Web Fetch tool.
->
-> 2. Where annual or fiscal-year data exists, use the last five years of it.
->
-> 3. Report the results in a chat message as bullet points plus tables, covering:
-> (1) The datasets used
-> (2) The number of non-regular workers, their working hours and their wage levels
-> (3) The trends, problems and implications you can see
+```text title="Prompt for the AI"
+From the e-Stat page that is currently open, find datasets on the wage situation of non-regular employment in Japan's food service industry, extract and organize the figures you need, and report the results.
+
+0. Access rules to observe
+(1) Do not send requests in rapid succession. Leave at least one second between page transitions, and do not make concurrent requests.
+(2) If a CAPTCHA, an access restriction, or an error screen appears, do not try to work around it — stop and report it.
+(3) Always state the source in the output (the portal site for official statistics of Japan (e-Stat), plus the survey name and the statistical table name).
+(4) Show any figure you calculated yourself in a form that distinguishes it from the government's published figures.
+
+1. Use the Browser tool; do not use the Web Fetch tool.
+
+2. Where annual or fiscal-year data exists, use the last five years of it.
+
+3. Report the results in a chat message as bullet points plus tables, covering:
+(1) The datasets used
+(2) The number of non-regular workers, their working hours and their wage levels
+(3) The trends, problems and implications you can see
+```
 
 ![Instructing the AI to analyze e-Stat data](@site/docs/current/main/browserautomation/img/search_estat_prompt.png)
 

@@ -26,7 +26,11 @@ URL: https://ikumen-project.mhlw.go.jp/library/training/
 
 ## AI に作業を指示
 
-- 新しいチャットセッションを作成し、インプットボックスに「このPPTXファイルを英語版に翻訳し、ファイル「Files/training_young2023_en.pptx」として保存してください。」と入力し、AI に作業を指示します。
+- 新しいチャットセッションを作成し、以下のように AI に作業内容を指示します。
+
+```text title="AI への指示"
+このPPTXファイルを英語版に翻訳し、ファイル「Files/training_young2023_en.pptx」として保存してください。
+```
 
 ![AI にPPTX翻訳を指示する](@site/docs/current/main/usekari/img/usekari_translatepptxinstruction.png)
 
