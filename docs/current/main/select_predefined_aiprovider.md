@@ -10,7 +10,7 @@ description: 定義済みの AI プロバイダーを選択する手順を説明
 
 Kari には主要な AI プロバイダーがあらかじめ登録されています。API キーをお持ちのプロバイダーを一覧から選び、キーを入力するだけで利用を開始できます。サブスクリプションの Sign In とは異なり、利用料はプロバイダーとのご契約に従って従量課金されます。
 
-1. AI プロバイダー設定画面で、「プロバイダーを選択」のドロップダウンをクリックします。Anthropic、Azure AI Foundry、Databricks、Google Gemini、Hugging Face、OpenAI など、あらかじめ登録されたプロバイダーが一覧で表示されます。一覧はスクロールできるほか、プロバイダー名を入力して絞り込むこともできます。
+1. AI プロバイダー設定画面で、「プロバイダーを選択」のドロップダウンをクリックします。Anthropic、Azure AI Foundry、Databricks、Google Gemini、Hugging Face、OpenAI など、あらかじめ登録されたプロバイダーが一覧で表示されます。一覧はスクロールできるほか、プロバイダー名を入力して絞り込むこともできます。登録されているプロバイダーの全一覧は、本ページ末尾の「[定義済み AI プロバイダー一覧](#predefined-provider-list)」を参照してください。
 
 ![プロバイダー一覧](@site/docs/current/main/img/select_predefined_aiprovider.png)
 
@@ -40,3 +40,83 @@ https://huggingface.co/docs/inference-providers/guides/first-api-call#step-1-fin
 6. 選択したプロバイダーとモデルで、チャットセッションで作業を始めます。
 
 ![チャット開始](@site/docs/current/main/img/select_predefined_aiprovider_first_chat.png)
+
+## 定義済み AI プロバイダー一覧 {#predefined-provider-list}
+
+現在の Kari に登録されている定義済み AI プロバイダーは次のとおりです（アルファベット順）。一覧は Kari のバージョンにより変わることがあります。
+
+- Alibaba (Qwen)
+- Amazon Bedrock
+- Amazon SageMaker TGI
+- Amp
+- Anthropic
+- Anthropic Claude Subscription
+- Atomic Chat
+- Avian
+- Azure AI Foundry
+- Azure OpenAI
+- Celeris
+- Cerebras
+- Cursor Agent
+- Databricks
+- Databricks AI Gateway
+- DeepSeek
+- EmpirioLabs AI
+- Fireworks AI
+- Friendli AI
+- FuturMix
+- GCP Vertex AI
+- Gemini
+- GitHub Copilot
+- GitHub Copilot CLI (ACP)
+- Google Gemini (API Key)
+- Groq
+- Hugging Face
+- iFlytek Astron MaaS
+- iFlytek Spark
+- Inception
+- Kimi Code
+- LiteLLM
+- Llama Swap
+- LM Studio
+- Local Inference
+- Meta
+- MiniMax
+- Mistral AI
+- Moonshot
+- NanoGPT
+- NEAR AI Cloud
+- Novita AI
+- NVIDIA
+- Ollama
+- Ollama Cloud
+- oMLX
+- OpenAI
+- OpenAI ChatGPT Subscription
+- OpenCode Go
+- OpenRouter
+- OrcaRouter
+- OVHcloud
+- Perplexity
+- Pi
+- Routstr
+- Sakana AI
+- SaladCloud AI Gateway
+- Scaleway
+- Snowflake
+- Tensorix
+- Tetrate Agent Router Service
+- Together AI
+- Venice.ai
+- Vercel AI Gateway
+- VMware Tanzu Platform
+- xAI
+- xAI (SuperGrok Subscription)
+- Z.AI
+- Zhipu AI
+
+補足:
+
+- 「Anthropic Claude Subscription」と「OpenAI ChatGPT Subscription」は、同じ画面上部の「AI サブスクリプションを使う」からも選択できます。サブスクリプションでの利用については別の手順書を参照してください。
+- 「Ollama」「LM Studio」「Llama Swap」「oMLX」「Atomic Chat」「Local Inference」は、ローカルで動作するモデルを利用するための項目で、API キーは不要です。
+- 「Amp」「Cursor Agent」「GitHub Copilot CLI (ACP)」「Pi」は、各社のエージェント CLI を Kari から利用するための項目で、対応する CLI のインストールが別途必要です。
