@@ -22,7 +22,15 @@ Kari での Claude サブスクリプションの利用は、Anthropic が定め
 - **利用量はユーザー本人のプランに計上されます。** Kari は Claude の利用を代理購入・再販・仲介しません。利用は各ユーザーと Anthropic との契約に基づき、Pro / Max の利用上限は Claude アプリや Claude Code と共通です。
 - **チャットは Claude Code 自身のエージェントで実行されます。** Kari の内蔵エージェントがサブスクリプションの認証情報を使って Anthropic に接続することはありません。設定画面の「Claude Code エージェントを使用する」が常にオンなのはこのためです。
 
-Anthropic は、第三者アプリが Claude アカウントでのログインを提供したり、Pro / Max プランの認証情報を通じてリクエストを中継したりすることを認めていません。一方で、プラットフォームが Claude Code を改変せずに提供し、ユーザー本人がそこに自分のサブスクリプションで Sign In することは認めています。Kari は後者の方式です。詳細は Anthropic の [Claude Code: Legal and compliance](https://code.claude.com/docs/en/legal-and-compliance) を参照してください。なお、Anthropic の条件は変更されることがあります。Kari での利用にあたっても、Anthropic の最新の利用規約が適用されます。
+Anthropic は、第三者アプリが Claude アカウントでのログインを提供したり、Pro / Max プランの認証情報を通じてリクエストを中継したりすることを認めていません。一方で、プラットフォームが Claude Code を改変せずに提供し、ユーザー本人がそこに自分のサブスクリプションで Sign In することは認めています。Kari は後者の方式です。詳細は Anthropic の [Claude Code: Legal and compliance](https://code.claude.com/docs/en/legal-and-compliance) を参照してください。
+:::
+
+---
+:::caution 今後の変更について
+
+Claude サブスクリプションの利用条件と利用枠は Anthropic 社が定めるものであり、**予告なく変更される場合があります**。変更の内容によっては、Kari からのサブスクリプション利用が制限される、利用可能なモデルや利用枠が変わる、利用量の課金方法が変わる、といった影響が生じる可能性があります。これらは Anthropic 社の判断によるもので、当社が事前に予測することも、継続的な利用可能性を保証することもできません。
+
+Kari は API Key によるご利用にも対応しています。サブスクリプションでのご利用が継続できなくなった場合は、設定画面から API Key に切り替えてご利用いただけます。
 :::
 
 ---

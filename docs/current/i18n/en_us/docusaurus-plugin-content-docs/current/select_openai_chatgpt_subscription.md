@@ -20,9 +20,15 @@ The way Kari uses a ChatGPT subscription is built to follow the approach OpenAI 
 - **Kari runs OpenAI's official Codex agent as it is.** Kari does not bundle Codex; the first time you use it, Kari downloads the official package published by OpenAI, unmodified. Codex is an open-source agent that OpenAI publishes under the Apache-2.0 licence.
 - **Sign-in completes on OpenAI's own pages.** What opens in the browser is OpenAI's authentication page, and the sign-in runs through Codex's own `codex login` mechanism. Codex stores the sign-in information on your device and shares it with the Codex CLI and IDE extensions on the same device. Kari does not transmit or relay that information anywhere.
 - **Usage counts against your own plan.** Kari does not buy, resell, or broker ChatGPT usage on your behalf. Use is governed by your own contract with OpenAI, and only the models OpenAI allows for your account are shown.
-- **You can choose between two agents.** When **Use the Codex agent** is on (the default, and what we recommend), chat runs on Codex's own agent and tools. When it is off, Kari's built-in agent connects to OpenAI using the sign-in information Codex stored on the device.
+- **Chat runs on Codex's own agent.** Kari's built-in agent never uses subscription sign-in information to connect to OpenAI. Subscription credentials are used only with each vendor's own agent.
+:::
 
-OpenAI publicly permits ChatGPT accounts to be used from third-party agents (harnesses) such as OpenCode and pi, and its "Codex for Open Source" programme supports use through those tools. That said, the ChatGPT terms of service contain no clause stating this explicitly, and OpenAI's published position may change. OpenAI's current terms of service apply to your use through Kari as well. For details, see OpenAI's [Codex for Open Source](https://developers.openai.com/community/codex-for-oss).
+---
+:::caution About future changes
+
+The terms and usage limits for a ChatGPT subscription are set by OpenAI and **may change without notice**. Depending on the change, using your subscription from Kari may become restricted, the available models or limits may change, or usage may be billed differently. These are OpenAI's decisions: we cannot anticipate them, and we cannot guarantee continued availability.
+
+Kari also works with an API key. If subscription use stops being available to you, you can switch to an API key in settings.
 :::
 
 ---
@@ -71,7 +77,7 @@ OpenAI publicly permits ChatGPT accounts to be used from third-party agents (har
 
 *Screenshot shown in the original Japanese.*
 
-  - (4) Turn **Use the Codex agent** on and chat runs on Codex's own agent and tools (recommended). Turn it off and chat runs on Kari's built-in agent and tools.
+  - (4) **Use the Codex agent** is always on and cannot be changed. Chat runs on Codex's own agent and tools.
 
 6. With the OpenAI ChatGPT Subscription selected, create a new AI chat session. At the bottom of the session window, click the model icon to the lower left of the input box and the **Change model** menu appears.
 

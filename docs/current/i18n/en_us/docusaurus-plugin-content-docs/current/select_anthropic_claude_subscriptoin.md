@@ -22,7 +22,15 @@ The way Kari uses a Claude subscription is built to follow the terms Anthropic s
 - **Usage counts against your own plan.** Kari does not buy, resell, or broker Claude usage on your behalf. Use is governed by your own contract with Anthropic, and the Pro / Max limits are the same ones shared with the Claude app and Claude Code.
 - **Chat runs on Claude Code's own agent.** Kari's built-in agent never uses subscription credentials to connect to Anthropic. That is why **Use the Claude Code agent** stays on in settings.
 
-Anthropic does not permit third-party applications to offer login with a Claude account, or to relay requests through Pro / Max credentials. It does permit a platform to offer Claude Code unmodified and let users sign in there with their own subscription. Kari takes the latter approach. For details, see Anthropic's [Claude Code: Legal and compliance](https://code.claude.com/docs/en/legal-and-compliance). Note that Anthropic's terms may change; Anthropic's current terms of service apply to your use through Kari as well.
+Anthropic does not permit third-party applications to offer login with a Claude account, or to relay requests through Pro / Max credentials. It does permit a platform to offer Claude Code unmodified and let users sign in there with their own subscription. Kari takes the latter approach. For details, see Anthropic's [Claude Code: Legal and compliance](https://code.claude.com/docs/en/legal-and-compliance).
+:::
+
+---
+:::caution About future changes
+
+The terms and usage limits for a Claude subscription are set by Anthropic and **may change without notice**. Depending on the change, using your subscription from Kari may become restricted, the available models or limits may change, or usage may be billed differently. These are Anthropic's decisions: we cannot anticipate them, and we cannot guarantee continued availability.
+
+Kari also works with an API key. If subscription use stops being available to you, you can switch to an API key in settings.
 :::
 
 ---
