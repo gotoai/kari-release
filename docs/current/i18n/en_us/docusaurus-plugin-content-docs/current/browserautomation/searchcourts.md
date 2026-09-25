@@ -77,7 +77,7 @@ Starting from the courts' precedent search page that is currently open, look int
 (1) Because the precedent search is not exhaustive of all judgments, do not perform statistical analysis such as case distribution, time trends or correlation with industry.
 (2) Anonymization: do not name defendant companies — describe them by industry and size (naming the state or a local government is allowed). Anonymize individual parties as "plaintiff X", "supervisor A" and so on.
 (3) When quoting a judgment, always give the court name, judgment date and case number alongside.
-　(4) State at the top that "this report is not legal advice".
+(4) State at the top that "this report is not legal advice".
 ```
 
 ![Instructing the AI to investigate court precedents](@site/docs/current/main/browserautomation/img/search_courts_prompt.png)
