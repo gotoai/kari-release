@@ -1,0 +1,53 @@
+/* A quiet grey panel, not an alarm: the rest of the page is still worth
+   reading on a phone, only the install step is not actionable there. */
+.notice {
+  margin: 0.5rem 0 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.title {
+  margin: 0 0 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.body,
+.hint {
+  margin: 0 0 0.6rem;
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.hint {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.share {
+  /* The blue of the download buttons, held locally for the same reason as in
+     DownloadTabs: it is the product's colour, not the docs theme's. */
+  display: inline-block;
+  margin-top: 0.9rem;
+  padding: 0.7rem 1.75rem;
+  border: 0;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  appearance: none;
+}
+
+.share:hover,
+.share:focus {
+  background: #1d4ed8;
+  color: #fff;
+}

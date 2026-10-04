@@ -8,6 +8,7 @@ description: Kari のインストールから最初の AI チャットまでを 
 
 import TabItem from "@theme/TabItem";
 import DownloadTabs, { DownloadCard } from "@site/src/components/DownloadTabs";
+import MobileNotice from "@site/src/components/MobileNotice";
 
 # 5分で使えるKari
 
@@ -28,6 +29,8 @@ Kari (かり・日本語「雁」の意味) は、ローカルファイルをAI�
 ---
 
 お使いの環境に合わせて、以下からダウンロードしてください。
+
+<MobileNotice />
 
 <DownloadTabs>
   <TabItem value="windows" label="Windows">

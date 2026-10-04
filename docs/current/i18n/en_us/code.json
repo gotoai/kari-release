@@ -338,6 +338,26 @@
     "message": "Based on the {goose} project",
     "description": "Attribution to the upstream project; {goose} is a link"
   },
+  "kari.mobile.title": {
+    "message": "Kari is a desktop application",
+    "description": "Heading of the notice shown to phone and tablet visitors"
+  },
+  "kari.mobile.body": {
+    "message": "Kari runs on Windows, macOS and Linux computers. It cannot be installed on iPhone, iPad or Android, and no mobile version is provided at this time.",
+    "description": "Body of the notice shown to phone and tablet visitors"
+  },
+  "kari.mobile.hint": {
+    "message": "Send this page to your computer and download Kari there.",
+    "description": "Line telling the visitor to continue on a computer"
+  },
+  "kari.mobile.share": {
+    "message": "Send to your computer",
+    "description": "Label of the button that sends the page link to a computer"
+  },
+  "kari.mobile.share.done": {
+    "message": "Link copied",
+    "description": "Button label after the page link was copied to the clipboard"
+  },
   "kari.download.badge.current": {
     "message": "Your platform",
     "description": "Badge on the download card matching the visitor's platform"

@@ -2,6 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import Tabs from "@theme/Tabs";
 import Translate from "@docusaurus/Translate";
 import { FaApple, FaLinux, FaWindows } from "react-icons/fa";
+import { detectDevice, type Platform } from "@site/src/components/platform";
 import styles from "./styles.module.css";
 
 /**
@@ -16,7 +17,9 @@ import styles from "./styles.module.css";
  *
  * DownloadTabs adds the platform mark to each tab label and selects the
  * visitor's own platform once the page is live in the browser; the matching
- * card shows a badge. The server-rendered page starts on the first tab.
+ * card shows a badge. The server-rendered page starts on the first tab. A
+ * phone or tablet resolves to no platform, so nothing is preselected and no
+ * card is badged — MobileNotice above the tabs says why (see ../platform.ts).
  *
  * Downloads go through download.kari.gotoai.com, a counted 302 to the GitHub
  * release asset. Clicking a button first probes that server with a HEAD
@@ -48,7 +51,7 @@ const LINUX_FALLBACK_URL = `${GITHUB_RELEASE_URL}kari_0.6.0_amd64.deb`;
 // falls back to GitHub. Only the failure path waits this long.
 const PROBE_TIMEOUT_MS = 3000;
 
-export type Platform = "windows" | "macos" | "linux";
+export type { Platform };
 
 interface DownloadLink {
   label: string;
@@ -117,14 +120,6 @@ const TEXT: Record<Platform, { requirements: React.ReactNode; note: React.ReactN
     ),
   },
 };
-
-function detectPlatform(): Platform | null {
-  const ua = navigator.userAgent;
-  if (/Windows/i.test(ua)) return "windows";
-  if (/Macintosh|Mac OS/i.test(ua)) return "macos";
-  if (/Linux|X11/i.test(ua)) return "linux";
-  return null;
-}
 
 /**
  * True when the download server answers the probe in time. A HEAD is
@@ -261,7 +256,7 @@ function labelWithIcon(platform: Platform, text: React.ReactNode): string {
 export default function DownloadTabs({ children }: { children: React.ReactNode }): React.JSX.Element {
   const [platform, setPlatform] = useState<Platform | null>(null);
   useEffect(() => {
-    setPlatform(detectPlatform());
+    setPlatform(detectDevice().platform);
   }, []);
 
   const items = React.Children.map(children, (child) => {

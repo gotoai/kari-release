@@ -8,6 +8,7 @@ description: From installing Kari to your first AI chat, in five minutes.
 
 import TabItem from "@theme/TabItem";
 import DownloadTabs, { DownloadCard } from "@site/src/components/DownloadTabs";
+import MobileNotice from "@site/src/components/MobileNotice";
 
 # Kari in 5 minutes
 
@@ -28,6 +29,8 @@ Let's begin 🚀
 ---
 
 Download the build for your platform below.
+
+<MobileNotice />
 
 <DownloadTabs>
   <TabItem value="windows" label="Windows">
