@@ -26,7 +26,11 @@ URL: https://ikumen-project.mhlw.go.jp/library/training/
 
 ## Instruct the AI
 
-- Create a new chat session and enter "Translate this PPTX file into English and save it as the file 'Files/training_young2023_en.pptx'." in the input box. The screenshot shows the same request in Japanese.
+- Create a new chat session and instruct the AI as follows. The prompt below is an English rendering of the Japanese prompt shown in the screenshot.
+
+```text title="Prompt for the AI"
+Translate this PPTX file into English and save it as the file "Files/training_young2023_en.pptx".
+```
 
 ![Asking the AI to translate the PPTX file](@site/docs/current/main/usekari/img/usekari_translatepptxinstruction.png)
 

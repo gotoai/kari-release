@@ -26,7 +26,11 @@ URL: https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_20251223.pdf
 
 ## Instruct the AI
 
-- Create a new chat session and enter "Please translate this document into English." in the input box. The screenshot shows the same request in Japanese (「この文章を英語に翻訳してください。」).
+- Create a new chat session and instruct the AI as follows. The prompt below is an English rendering of the Japanese prompt shown in the screenshot.
+
+```text title="Prompt for the AI"
+Please translate this document into English.
+```
 
 ![Asking the AI to translate the document](@site/docs/current/main/usekari/img/usekari_translateinstruction.png)
 

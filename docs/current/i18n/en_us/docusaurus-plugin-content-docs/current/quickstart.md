@@ -8,10 +8,11 @@ description: From installing Kari to your first AI chat, in five minutes.
 
 import TabItem from "@theme/TabItem";
 import DownloadTabs, { DownloadCard } from "@site/src/components/DownloadTabs";
+import MobileNotice from "@site/src/components/MobileNotice";
 
 # Kari in 5 minutes
 
-Kari (Japanese Hiragana かり and Kanji 雁, which means "Goose") is an AI assistant that reads, thinks and works alongside you on the files on your own machine. Drafting email, summarizing documents, translating material, building slides, analyzing and visualizing data, retrieving information from the web — Kari brings all of that work into a single tool, as a user-centered front end for AI agents.
+Kari (Japanese Hiragana かり and Kanji 雁, which means "Wild goose") is an AI assistant that reads, thinks and works alongside you on the files on your own machine. Drafting email, summarizing documents, translating material, building slides, analyzing and visualizing data, retrieving information from the web — Kari brings all of that work into a single tool, as a user-centered front end for AI agents.
 
 This tutorial walks through the following steps in order.
 
@@ -28,6 +29,8 @@ Let's begin 🚀
 ---
 
 Download the build for your platform below.
+
+<MobileNotice />
 
 <DownloadTabs>
   <TabItem value="windows" label="Windows">

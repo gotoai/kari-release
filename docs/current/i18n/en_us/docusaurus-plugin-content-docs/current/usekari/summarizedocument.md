@@ -26,7 +26,11 @@ URL: https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_20251223.pdf
 
 ## Instruct the AI
 
-- Create a new chat session and enter "Please summarize this document." in the input box. The screenshot shows the same request in Japanese (「この文章の要約を作成してください。」).
+- Create a new chat session and instruct the AI as follows. The prompt below is an English rendering of the Japanese prompt shown in the screenshot.
+
+```text title="Prompt for the AI"
+Please summarize this document.
+```
 
 ![Asking the AI to summarize the document](@site/docs/current/main/usekari/img/usekari_summarizeinstruction.png)
 
@@ -42,7 +46,11 @@ URL: https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_20251223.pdf
 
 ## Ask the AI for more
 
-- You can follow up with further questions, for example about one particular aspect of the document.
+- You can follow up with further questions, for example about one particular aspect of the document. The prompt below is an English rendering of the Japanese prompt shown in the screenshot.
+
+```text title="Prompt for the AI"
+What priority measures are there for improving Japan's AI technological capability?
+```
 
 ![A follow-up question and its answer](@site/docs/current/main/usekari/img/usekari_summarizemorequestion.png)
 

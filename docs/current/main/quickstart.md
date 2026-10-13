@@ -8,6 +8,7 @@ description: Kari のインストールから最初の AI チャットまでを 
 
 import TabItem from "@theme/TabItem";
 import DownloadTabs, { DownloadCard } from "@site/src/components/DownloadTabs";
+import MobileNotice from "@site/src/components/MobileNotice";
 
 # 5分で使えるKari
 
@@ -29,12 +30,13 @@ Kari (かり・日本語「雁」の意味) は、ローカルファイルをAI�
 
 お使いの環境に合わせて、以下からダウンロードしてください。
 
+<MobileNotice />
+
 <DownloadTabs>
   <TabItem value="windows" label="Windows">
     <DownloadCard platform="windows" />
-
-<!-- 
-    1. ダウンロードしたインストーラー（KariSetup-バージョン-x64.exe）を実行します。
+ 
+    1. ダウンロードしたインストーラー（KariSetup-&lt;バージョン&gt;-x64.exe）を実行します。
     2. インストーラーの指示に従ってインストールし、スタートメニューまたはデスクトップから Kari を起動します。
 
     ![Windows のインストーラー画面](@site/docs/current/main/img/quickstart_windowsinstallstart.png)
@@ -42,7 +44,7 @@ Kari (かり・日本語「雁」の意味) は、ローカルファイルをAI�
     ![Windows のインストーラー画面](@site/docs/current/main/img/quickstart_windowsinstallprogress.png)
 
     ![Windows のインストーラー画面](@site/docs/current/main/img/quickstart_windowsinstallcomplete.png)
--->
+
   </TabItem>
   <TabItem value="macos" label="macOS">
     <DownloadCard platform="macos" />

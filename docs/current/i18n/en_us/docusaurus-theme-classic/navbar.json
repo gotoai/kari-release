@@ -6,5 +6,13 @@
   "item.label.ダウンロード": {
     "message": "Download",
     "description": "Navbar item with label ダウンロード"
+  },
+  "logo.alt": {
+    "message": "GotoAI",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Kari": {
+    "message": "Kari",
+    "description": "Navbar item with label Kari"
   }
 }

@@ -10,6 +10,14 @@
 }
 
 .card {
+  /* The accent is the blue of the download buttons on the product page at
+     gotoai.com/ai-products/kari-jp/, held here rather than taken from
+     `--ifm-color-primary` so the two pages offer the same button in the same
+     colour. Fixed across both themes for the same reason: it is the product's
+     colour, not the docs theme's. */
+  --kari-download-accent: #2563eb;
+  --kari-download-accent-hover: #1d4ed8;
+
   position: relative;
   max-width: 22rem;
   margin: 0.5rem 0 1.25rem;
@@ -21,7 +29,7 @@
 }
 
 .cardCurrent {
-  border-color: var(--ifm-color-primary);
+  border-color: var(--kari-download-accent);
 }
 
 .badge {
@@ -31,7 +39,7 @@
   transform: translateX(-50%);
   padding: 0.1rem 0.7rem;
   border-radius: 999px;
-  background: var(--ifm-color-primary);
+  background: var(--kari-download-accent);
   color: #fff;
   font-size: 0.75rem;
   font-weight: 600;
@@ -70,7 +78,7 @@
   align-items: center;
   padding: 0.55rem 1.4rem;
   border-radius: 8px;
-  background: var(--ifm-color-primary);
+  background: var(--kari-download-accent);
   color: #fff;
   font-weight: 600;
   line-height: 1.2;
@@ -78,7 +86,7 @@
 }
 
 .button:hover {
-  background: var(--ifm-color-primary-dark);
+  background: var(--kari-download-accent-hover);
   color: #fff;
   text-decoration: none;
 }

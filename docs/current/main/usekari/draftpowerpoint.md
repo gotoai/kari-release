@@ -34,17 +34,19 @@ URL: https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/b22100
 
 - 答弁ページのURLをインプットボックスに入力し、パワーポイントの骨子資料の作成を AI に依頼します。AI へのプロンプト例を以下に示します。
 
-> このページ、「 https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/b221002.htm 」の答弁内容を構造化し、答弁の骨子資料のパワーポイントを作成してファイル「答弁骨子.pptx」として保存してください。
-> 
-> なお、情報を最大3階層、ヘッド1・ヘッド2・本文のレベルで整理し、フォントサイズについては、
-> 
-> ・資料のタイトルは36pt  
-> ・メッセージラインは28pt  
-> ・ヘッド1は20pt  
-> ・ヘッド2は16pt  
-> ・本文は12pt  
->
-> にしてください。
+```text title="AI への指示"
+このページ、「 https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/b221002.htm 」の答弁内容を構造化し、答弁の骨子資料のパワーポイントを作成してファイル「答弁骨子.pptx」として保存してください。
+
+なお、情報を最大3階層、ヘッド1・ヘッド2・本文のレベルで整理し、フォントサイズについては、
+
+・資料のタイトルは36pt
+・メッセージラインは28pt
+・ヘッド1は20pt
+・ヘッド2は16pt
+・本文は12pt
+
+にしてください。
+```
 
 ![AI にパワーポイント作成を依頼](@site/docs/current/main/usekari/img/usekari_draftpptxinstruction.png)
 

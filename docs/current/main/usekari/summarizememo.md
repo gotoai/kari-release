@@ -32,7 +32,12 @@ URL: https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/b22100
 
 ## AI に作業を指示
 
-- 答弁ページのURLをインプットボックスに入力し、要点をまとめる作業を AI に依頼します。
+- 答弁ページの URL を添えて、要点をまとめる作業を AI に依頼します。以下のように AI に作業内容を指示します。
+
+```text title="AI への指示"
+この答弁ページの要点をまとめて箇条書きで出力してください。
+https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/b221002.htm
+```
 
 ![AI に要約作業を依頼](@site/docs/current/main/usekari/img/usekari_summarizewebmeetingminuteprompt.png)
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 8
 slug: /license
 title: goose Apache 2.0 License
 description: The Apache License, Version 2.0, under which the goose project that Kari is derived from is licensed.

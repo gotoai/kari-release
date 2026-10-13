@@ -26,7 +26,11 @@ URL: https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_20251223.pdf
 
 ## AI に作業を指示
 
-- 新しいチャットセッションを作成し、インプットボックスに「この文章を英語に翻訳してください。」と入力し、AI に作業を指示します。
+- 新しいチャットセッションを作成し、以下のように AI に作業内容を指示します。
+
+```text title="AI への指示"
+この文章を英語に翻訳してください。
+```
 
 ![AI に文章翻訳を指示する](@site/docs/current/main/usekari/img/usekari_translateinstruction.png)
 

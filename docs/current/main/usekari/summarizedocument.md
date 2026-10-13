@@ -26,7 +26,11 @@ URL: https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_20251223.pdf
 
 ## AI に作業を指示
 
-- 新しいチャットセッションを作成し、インプットボックスに「この文章の要約を作成してください。」と入力し、AI に作業を指示します。
+- 新しいチャットセッションを作成し、以下のように AI に作業内容を指示します。
+
+```text title="AI への指示"
+この文章の要約を作成してください。
+```
 
 ![文章の要約を AI で作成する](@site/docs/current/main/usekari/img/usekari_summarizeinstruction.png)
 
@@ -39,6 +43,10 @@ URL: https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_20251223.pdf
 ## AI に追加作業を指示
 
 - 特定の観点について、追加の質問を AI に投げかけることもできます。
+
+```text title="AI への指示"
+日本のAI技術力を向上するために、どのような重点施策はありますか。
+```
 
 ![追加質問対応](@site/docs/current/main/usekari/img/usekari_summarizemorequestion.png)
 

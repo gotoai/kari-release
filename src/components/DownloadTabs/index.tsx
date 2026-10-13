@@ -2,6 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import Tabs from "@theme/Tabs";
 import Translate from "@docusaurus/Translate";
 import { FaApple, FaLinux, FaWindows } from "react-icons/fa";
+import { detectDevice, type Platform } from "@site/src/components/platform";
 import styles from "./styles.module.css";
 
 /**
@@ -16,7 +17,9 @@ import styles from "./styles.module.css";
  *
  * DownloadTabs adds the platform mark to each tab label and selects the
  * visitor's own platform once the page is live in the browser; the matching
- * card shows a badge. The server-rendered page starts on the first tab.
+ * card shows a badge. The server-rendered page starts on the first tab. A
+ * phone or tablet resolves to no platform, so nothing is preselected and no
+ * card is badged — MobileNotice above the tabs says why (see ../platform.ts).
  *
  * Downloads go through download.kari.gotoai.com, a counted 302 to the GitHub
  * release asset. Clicking a button first probes that server with a HEAD
@@ -31,7 +34,7 @@ import styles from "./styles.module.css";
 
 // Counted download names, resolved by kari-license-manager's
 // config/download_mapping.yml.
-const WINDOWS_DOWNLOAD_URL = ""; //"https://download.kari.gotoai.com/KariSetup-latest-x64.exe";
+const WINDOWS_DOWNLOAD_URL = "https://download.kari.gotoai.com/KariSetup-latest-x64.exe";
 const MACOS_SILICON_DOWNLOAD_URL = "https://download.kari.gotoai.com/Kari-latest-arm64.dmg";
 const MACOS_INTEL_DOWNLOAD_URL = "https://download.kari.gotoai.com/Kari-latest-x64.dmg";
 const LINUX_DOWNLOAD_URL = "https://download.kari.gotoai.com/kari_latest.deb";
@@ -39,7 +42,7 @@ const LINUX_DOWNLOAD_URL = "https://download.kari.gotoai.com/kari_latest.deb";
 // Fallback: the release assets themselves. Must name the same files the
 // `latest` lines of download_mapping.yml point at; update both on a release.
 const GITHUB_RELEASE_URL = "https://github.com/gotoai/kari-release/releases/download/v0.6.0/";
-const WINDOWS_FALLBACK_URL = ""; //`${GITHUB_RELEASE_URL}KariSetup-0.6.0-x64.exe`;
+const WINDOWS_FALLBACK_URL = `${GITHUB_RELEASE_URL}KariSetup-0.6.0-x64.exe`;
 const MACOS_SILICON_FALLBACK_URL = `${GITHUB_RELEASE_URL}Kari-0.6.0-arm64.dmg`;
 const MACOS_INTEL_FALLBACK_URL = `${GITHUB_RELEASE_URL}Kari-0.6.0-x64.dmg`;
 const LINUX_FALLBACK_URL = `${GITHUB_RELEASE_URL}kari_0.6.0_amd64.deb`;
@@ -48,7 +51,7 @@ const LINUX_FALLBACK_URL = `${GITHUB_RELEASE_URL}kari_0.6.0_amd64.deb`;
 // falls back to GitHub. Only the failure path waits this long.
 const PROBE_TIMEOUT_MS = 3000;
 
-export type Platform = "windows" | "macos" | "linux";
+export type { Platform };
 
 interface DownloadLink {
   label: string;
@@ -80,7 +83,7 @@ const NAMES: Record<Platform, string> = {
 };
 
 const TEXT: Record<Platform, { requirements: React.ReactNode; note: React.ReactNode }> = {
-  /* windows: {
+  windows: {
     requirements: (
       <Translate id="kari.download.windows.requirements" description="Supported Windows versions">
         Windows 10 / 11（64bit）
@@ -91,19 +94,7 @@ const TEXT: Record<Platform, { requirements: React.ReactNode; note: React.ReactN
         Microsoft Azure により署名済み
       </Translate>
     ),
-  }, */
-  windows: {
-    requirements: (
-      <Translate id="kari.download.windows.requirements" description="Supported Windows versions">
-        Windows 10 / 11（64bit）
-      </Translate>
-    ),
-    note: (
-      <Translate id="kari.download.windows.note" description="Signing status of the Windows installer">
-       準備中
-      </Translate>
-    ),
-  },
+  }, 
   macos: {
     requirements: (
       <Translate id="kari.download.macos.requirements" description="Supported macOS versions">
@@ -129,14 +120,6 @@ const TEXT: Record<Platform, { requirements: React.ReactNode; note: React.ReactN
     ),
   },
 };
-
-function detectPlatform(): Platform | null {
-  const ua = navigator.userAgent;
-  if (/Windows/i.test(ua)) return "windows";
-  if (/Macintosh|Mac OS/i.test(ua)) return "macos";
-  if (/Linux|X11/i.test(ua)) return "linux";
-  return null;
-}
 
 /**
  * True when the download server answers the probe in time. A HEAD is
@@ -273,7 +256,7 @@ function labelWithIcon(platform: Platform, text: React.ReactNode): string {
 export default function DownloadTabs({ children }: { children: React.ReactNode }): React.JSX.Element {
   const [platform, setPlatform] = useState<Platform | null>(null);
   useEffect(() => {
-    setPlatform(detectPlatform());
+    setPlatform(detectDevice().platform);
   }, []);
 
   const items = React.Children.map(children, (child) => {

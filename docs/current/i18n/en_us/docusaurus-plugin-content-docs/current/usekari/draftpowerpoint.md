@@ -38,15 +38,17 @@ URL: https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/b22100
 
 - Enter the URL of the answer page in the session's input box and ask the AI to build an outline deck. An example prompt follows; the screenshot shows the same prompt in Japanese.
 
-> Structure the content of the answer on this page, " https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/b221002.htm ", create a PowerPoint deck outlining the answer, and save it as the file "答弁骨子.pptx".
->
-> Organize the information in at most three levels: heading 1, heading 2 and body text. Use the following font sizes:
->
-> - Deck title: 36 pt  
-> - Message line: 28 pt  
-> - Heading 1: 20 pt  
-> - Heading 2: 16 pt  
-> - Body text: 12 pt
+```text title="Prompt for the AI"
+Structure the content of the answer on this page, " https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/b221002.htm ", create a PowerPoint deck outlining the answer, and save it as the file "答弁骨子.pptx".
+
+Organize the information in at most three levels: heading 1, heading 2 and body text. Use the following font sizes:
+
+- Deck title: 36 pt
+- Message line: 28 pt
+- Heading 1: 20 pt
+- Heading 2: 16 pt
+- Body text: 12 pt
+```
 
 ![Asking the AI to create the PowerPoint deck](@site/docs/current/main/usekari/img/usekari_draftpptxinstruction.png)
 
