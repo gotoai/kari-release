@@ -1,0 +1,10 @@
+{
+  "label": "AI による東京不動産価格分析",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "title": "AI による東京不動産価格分析",
+    "description": "AI による不動産情報ライブラリのデータを用いた不動産価格の分析事例を紹介します。",
+    "slug": "/tokyorealestate"
+  }
+}
