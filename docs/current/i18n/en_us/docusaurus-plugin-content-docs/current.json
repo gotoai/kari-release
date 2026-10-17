@@ -26,5 +26,41 @@
   "sidebar.docs.category.Browser 処理自動化.link.generated-index.description": {
     "message": "Examples of having the AI automate work in a web browser.",
     "description": "The generated-index page description for category 'Browser 処理自動化' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI によるデータ分析自動化": {
+    "message": "AI data analysis automation",
+    "description": "The label for category 'AI によるデータ分析自動化' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI によるデータ分析自動化.link.generated-index.title": {
+    "message": "AI data analysis automation",
+    "description": "The generated-index page title for category 'AI によるデータ分析自動化' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI によるデータ分析自動化.link.generated-index.description": {
+    "message": "Examples of having the AI automate parsing data files, analyzing data, drawing charts and drawing out insights.",
+    "description": "The generated-index page description for category 'AI によるデータ分析自動化' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI によるインバウンド消費動向分析": {
+    "message": "AI analysis of inbound tourist spending",
+    "description": "The label for category 'AI によるインバウンド消費動向分析' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI によるインバウンド消費動向分析.link.generated-index.title": {
+    "message": "AI analysis of inbound tourist spending",
+    "description": "The generated-index page title for category 'AI によるインバウンド消費動向分析' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI によるインバウンド消費動向分析.link.generated-index.description": {
+    "message": "An example of having the AI analyze inbound tourist spending in Japan, using data published by the Japan Tourism Agency and JNTO.",
+    "description": "The generated-index page description for category 'AI によるインバウンド消費動向分析' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI による東京不動産価格分析": {
+    "message": "AI analysis of Tokyo real estate prices",
+    "description": "The label for category 'AI による東京不動産価格分析' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI による東京不動産価格分析.link.generated-index.title": {
+    "message": "AI analysis of Tokyo real estate prices",
+    "description": "The generated-index page title for category 'AI による東京不動産価格分析' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI による東京不動産価格分析.link.generated-index.description": {
+    "message": "An example of having the AI analyze real estate prices, using data from the Real Estate Information Library.",
+    "description": "The generated-index page description for category 'AI による東京不動産価格分析' in sidebar 'docs'"
   }
 }
