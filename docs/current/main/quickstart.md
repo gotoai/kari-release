@@ -86,7 +86,7 @@ Kari (かり・日本語「雁」の意味) は、ローカルファイルをAI�
 - AI サブスクリプションを選択します  
   現在バージョンの Kari は以下の AI サブスクリプションを選択できます：　　
   - [Anthropic Claude (Pro / Max)](select_anthropic_claude_subscriptoin.md)
-  - [OpenAI ChatGPT (Free / Go / Plus / Pro)](./select_openai_chatgpt_subscription.md)
+  - [OpenAI ChatGPT (Plus / Pro)](./select_openai_chatgpt_subscription.md)
   
 - [事前定義済みの70以上の AI プロバイダー](./select_predefined_aiprovider.md)から選択します  
 
