@@ -34,20 +34,20 @@ URL: https://www.reinfolib.mlit.go.jp/realEstatePrices/
 ```text title="Prompt for the AI"
 Starting from the page that is currently open, search for and download the CSV files, merge them into a single output CSV file and save it.
 
-Access rules to observe
+1. Access rules to observe
 (1) Leave at least two seconds between page transitions, and do not make concurrent requests from the agent.
 (2) If a CAPTCHA, an access restriction screen, or an error screen appears, do not try to work around it — stop and report it.
 
-Working approach
+2. Working approach
 (1) Use the Browser tool; do not use the Web Fetch tool.
 (2) Perform no write operations other than downloads.
 (3) Limit the search to: 「地域」 (area) — Tokyo's 23 wards; 「価格情報区分」 (price information category) — all categories; 「種類」 (type) — 【土地と建物】 (land and building) and 【中古マンション等】 (second-hand condominiums); 「時期」 (period) — the most recent five years.
 (4) The search shows at most 10000 results, so check every time that the results are not cut off.
 
-Saving the file
+3. Saving the file
 (1) Save it in the current session folder under the file name 「不動産価格.csv」 (real estate prices).
 
-Chat output: in addition to saving the file, output the following in the body of the chat reply, as bullet points plus tables
+4. Chat output: in addition to saving the file, output the following in the body of the chat reply, as bullet points plus tables
 (1) A table of the search conditions retrieved. State clearly anything that could not be downloaded.
 (2) The path and file size of the saved file.
 (3) The source, stated clearly (Source: MLIT website, URL of the relevant page).
