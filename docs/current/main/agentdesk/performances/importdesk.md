@@ -31,7 +31,7 @@ title: デスク設定のインポート
 | 1 | デスク設定のインポート（このページ） |
 | 2 | [MCP サーバーの設定](./setupmcpserver.md) — EDINET の API キーの取得と、MCP サーバーの追加 |
 | 3 | [Eメールの設定](./setupemails.md) — 管理者アドレスと送信アカウント |
-| 4 | [デスクの起動](./startdesk.md) — AI プロバイダーの選択と起動 |
+| 4 | [設定の確認とデスクの起動](./startdesk.md) — AI プロバイダーの選択と起動 |
 | 5 | [依頼の送信](./submitform.md) — Web インテークポータルから依頼を出す |
 | 6 | [結果の確認](./checkresult.md) — モニターコンソールと診断レポート |
 
@@ -46,7 +46,7 @@ title: デスク設定のインポート
 
 次のファイルをダウンロードしてください。
 
-**[企業業績デスクの設定情報をダウンロード](https://github.com/gotoai/kari-release/releases/download/v0.7.4/performances.dsk)**
+**[企業業績診断デスクの設定情報をダウンロード](https://github.com/gotoai/kari-release/releases/download/v0.7.4/performances.dsk)**
 
 `.dsk` は、エージェントデスクの設定をひとまとめにしたファイルです。このファイルには次のものが入っています。
 

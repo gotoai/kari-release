@@ -10,9 +10,11 @@ title: MCPサーバーの設定
 Jグランツ（jGrants）は、国や自治体の補助金・助成金を扱う日本の補助金ポータルです。この MCP サーバーはその公開 API を使い、API キーの登録は不要です。
 
 :::note
-JGrants Util MCP サーバーは標準 Python パッケージで、GotoAI 株式会社が開発・無償配布します。  
-pypi.org でのパッケージページ：
-https://pypi.org/project/jgrants-util-mcp-server/
+
+JGrants Util MCP サーバーは標準の Python パッケージで、GotoAI 株式会社が開発し、無償で配布しています。
+
+pypi.org のパッケージページ：https://pypi.org/project/jgrants-util-mcp-server/
+
 :::
 
 ## 1. Kari に MCP サーバーを追加する

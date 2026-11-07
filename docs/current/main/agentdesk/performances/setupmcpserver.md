@@ -8,9 +8,11 @@ title: MCPサーバーの設定
 このデスクは、有価証券報告書そのものを読むために **EDINET Util** という MCP サーバーを使います。デスクの設定にはサーバーの**名前だけ**が記録されているため、サーバー本体は、この Kari 側で用意します。
 
 :::note
-EDINET Util MCP サーバーは標準 Python パッケージで、GotoAI 株式会社が開発・無償配布します。  
-pypi.org でのパッケージページ：
-https://pypi.org/project/edinet-util-mcp-server/
+
+EDINET Util MCP サーバーは標準の Python パッケージで、GotoAI 株式会社が開発し、無償で配布しています。
+
+pypi.org のパッケージページ：https://pypi.org/project/edinet-util-mcp-server/
+
 :::
 
 手順は3つです。

@@ -62,5 +62,41 @@
   "sidebar.docs.category.AI による東京不動産価格分析.link.generated-index.description": {
     "message": "An example of having the AI analyze real estate prices, using data from the Real Estate Information Library.",
     "description": "The generated-index page description for category 'AI による東京不動産価格分析' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.エージェントデスク": {
+    "message": "Agent Desk",
+    "description": "The label for category 'エージェントデスク' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.エージェントデスク.link.generated-index.title": {
+    "message": "Agent Desk",
+    "description": "The generated-index page title for category 'エージェントデスク' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.エージェントデスク.link.generated-index.description": {
+    "message": "Building an unattended desk that accepts a request, works it under a written job description and returns the deliverable.",
+    "description": "The generated-index page description for category 'エージェントデスク' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.例1：補助金診断デスク": {
+    "message": "Example 1: Subsidy diagnosis desk",
+    "description": "The label for category '例1：補助金診断デスク' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.例1：補助金診断デスク.link.generated-index.title": {
+    "message": "Example 1: Subsidy diagnosis desk",
+    "description": "The generated-index page title for category '例1：補助金診断デスク' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.例1：補助金診断デスク.link.generated-index.description": {
+    "message": "A walkthrough of a desk that looks for subsidies a company could apply for and writes a diagnosis report.",
+    "description": "The generated-index page description for category '例1：補助金診断デスク' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.例2：企業業績診断デスク": {
+    "message": "Example 2: Corporate performance diagnosis desk",
+    "description": "The label for category '例2：企業業績診断デスク' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.例2：企業業績診断デスク.link.generated-index.title": {
+    "message": "Example 2: Corporate performance diagnosis desk",
+    "description": "The generated-index page title for category '例2：企業業績診断デスク' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.例2：企業業績診断デスク.link.generated-index.description": {
+    "message": "A walkthrough of a desk that diagnoses a listed company against its industry peers, from its annual securities reports.",
+    "description": "The generated-index page description for category '例2：企業業績診断デスク' in sidebar 'docs'"
   }
 }
