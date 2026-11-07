@@ -42,3 +42,18 @@ pre.language-text code {
   white-space: pre-wrap;
   overflow-wrap: break-word;
 }
+
+/* Figure captions. The theme renders alt text into the `alt` attribute only, so
+   a caption is written as its own line right after the image. Smaller and muted
+   so it reads as a label rather than body text; the colour is a theme variable
+   so it follows light and dark mode on its own. Never italic: Japanese faces
+   have no italic, and the browser's synthesised slant looks broken.
+   The negative margin closes the paragraph gap the image leaves behind. */
+.caption {
+  display: block;
+  margin-top: calc(var(--ifm-paragraph-margin-bottom) * -0.75);
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  text-align: center;
+}
