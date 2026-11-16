@@ -24,6 +24,22 @@ Kari (かり・日本語「雁」の意味) は、ローカルファイルをAI�
 
 それでは始めましょう 🚀
 
+## ウェビナー開催（12月2日）
+
+Kari の使い方を 60 分のデモで紹介する無料ウェビナーを、Microsoft Teams で開催します。要約・翻訳からブラウザー操作の自動化、ノーコードのデータ分析、無人運営の業務窓口「エージェントデスク」の立ち上げ方までをご覧いただけます。
+
+![ウェビナー告知：「Claude・ChatGPTのサブスクでも使えるAIエージェント『Kari』で、業務効率化を始める」12月2日（水）13:00〜14:00、Teams 開催・参加無料、登壇者 党 聡維（GotoAI株式会社 代表取締役CEO）](@site/docs/current/main/img/quickstart_webinar_20261202.png)
+
+- 日時：2026年12月2日（水）13:00〜14:00（60分）
+- 形式：オンライン（Microsoft Teams、アカウント不要）
+- 参加費：無料（事前登録制）
+- 登壇者：党 聡維（GotoAI株式会社 代表取締役CEO）
+- 言語：日本語
+
+お申し込みは[Teams 登録ページ](https://events.teams.microsoft.com/event/5b93ea6b-661c-4624-948e-7f7ee50e8290@a6743a45-2f97-4190-bf9d-feff48352aa4?source=copyLinkOneEventsShareDialog)から。イベントの詳細は[PR TIMES のプレスリリース](https://prtimes.jp/main/html/rd/p/000000006.000190819.html)をご覧ください。
+
+---
+
 ## Kariをインストールする
 
 ---
